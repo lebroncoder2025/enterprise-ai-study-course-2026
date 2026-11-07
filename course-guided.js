@@ -24,6 +24,13 @@ for(const [id,steps] of Object.entries(DATA)){
 }
 let repeats=0;
 document.querySelectorAll('.sublesson-body p').forEach(p=>{if(/^(Spróbuj odpowiedzieć: co to jest, jak działa|Spróbuj wytłumaczyć ten temat komuś, kto nie programuje|Wybierz jeden rzeczywisty proces, wypisz ryzyka)/.test(p.textContent.trim())){p.remove();repeats++}});
+// Keep older chart-only animations for reference, not as primary teaching material.
+document.querySelectorAll('.study-film').forEach(f=>{
+ if(f.closest('.old-clip-folder'))return;
+ const lesson=f.closest('.sublesson');if(!lesson)return;
+ const fold=mk('details','old-clip-folder');const summary=mk('summary','','Dawna wizualizacja wykresu — opcjonalna');
+ f.replaceWith(fold);fold.append(summary,f);
+});
 console.info('Course paths: '+Object.keys(DATA).length+', duplicate tips removed: '+repeats);
 })();
 /* Real offline MP4 chapters: generated, narrated and captioned in Polish. */

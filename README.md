@@ -8,6 +8,7 @@ An offline-friendly, responsive learning path for AI, machine learning, LLM appl
 - 5 supplemental infrastructure topics covering APIs, MCP, Azure and file workflows
 - 16 hands-on labs and 144 quiz questions with explanations
 - Local video, diagrams and clearly labelled educational interface mockups
+- A Work IQ deep dive in the Copilot Studio section, with an architecture diagram, source comparison, security checklist and self-check quiz
 
 The five supplemental topics extend the course but are not counted as additional core lessons in the progress tracker.
 

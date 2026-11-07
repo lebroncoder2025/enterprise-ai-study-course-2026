@@ -1,0 +1,35 @@
+.work-iq-guide { scroll-margin-top: 1rem; }
+.workiq-callout { border-left: 4px solid #52d4c8; padding: 1rem 1.1rem; border-radius: 0 12px 12px 0; background: rgba(82,212,200,.08); }
+.workiq-layers, .workiq-flow { display: grid; gap: .8rem; margin: 1rem 0; }
+.workiq-layers { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.workiq-flow { grid-template-columns: repeat(5,minmax(0,1fr)); align-items: stretch; }
+.workiq-card, .workiq-step { min-width: 0; padding: .95rem; border: 1px solid rgba(136,170,210,.25); border-radius: 12px; background: rgba(18,42,69,.48); }
+.workiq-step { position:relative; }
+.workiq-step:not(:last-child)::after { content:"?"; position:absolute; right:-.67rem; top:50%; transform:translate(50%,-50%); z-index:1; color:#66d8cb; font-size:1.25rem; }
+.workiq-card h3, .workiq-step strong { display:block; margin: 0 0 .45rem; color: #a8f0e8; }
+.workiq-card p, .workiq-step p { margin: .3rem 0 0; }
+.workiq-arrow { display:flex; align-items:center; justify-content:center; color:#66d8cb; font-size:1.35rem; }
+.workiq-table-wrap { overflow-x:auto; margin:1rem 0; }
+.workiq-table { width:100%; border-collapse:collapse; min-width:650px; }
+.workiq-table th,.workiq-table td { padding:.7rem; border:1px solid rgba(136,170,210,.24); text-align:left; vertical-align:top; }
+.workiq-table th { color:#a8f0e8; background:rgba(18,42,69,.68); }
+.workiq-mini-quiz { margin:1rem 0; padding:1rem; border:1px solid rgba(136,170,210,.25); border-radius:12px; }
+.workiq-mini-quiz fieldset { margin:0 0 1rem; border:0; padding:0; }
+.workiq-mini-quiz legend { font-weight:700; margin-bottom:.55rem; }
+.workiq-mini-quiz label { display:block; padding:.35rem .2rem; cursor:pointer; }
+.workiq-mini-quiz input { margin-right:.5rem; accent-color:#52d4c8; }
+.workiq-feedback { min-height:1.6em; margin:.65rem 0 0; color:#a8f0e8; }
+.workiq-sources li { overflow-wrap:anywhere; }
+@media(max-width:760px) {
+  .workiq-layers { grid-template-columns:1fr; }
+  .workiq-flow { grid-template-columns:1fr; }
+  .workiq-step:not(:last-child)::after { content:"?"; position:static; display:block; transform:none; margin:.4rem auto -.1rem; text-align:center; }
+  .workiq-table-wrap { overflow:visible; }
+  .workiq-table, .workiq-table tbody, .workiq-table tr, .workiq-table td { display:block; width:100%; min-width:0; }
+  .workiq-table { border:0; }
+  .workiq-table thead { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  .workiq-table tr { margin:.75rem 0; border:1px solid rgba(136,170,210,.25); border-radius:12px; overflow:hidden; }
+  .workiq-table td { padding:.7rem; border:0; border-bottom:1px solid rgba(136,170,210,.18); }
+  .workiq-table td:last-child { border-bottom:0; }
+  .workiq-table td::before { content:attr(data-label); display:block; margin-bottom:.25rem; color:#a8f0e8; font-size:.78rem; font-weight:700; }
+}

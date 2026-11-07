@@ -4,7 +4,8 @@
 
 - Główna ścieżka: 10 działów i 52 lekcje śledzone na pasku postępu.
 - Praktyka: 16 laboratoriów oraz quiz z 144 pytaniami i wyjaśnieniami.
-- Uzupełnienia: 5 tematów infrastruktury (API, MCP, Azure i obsługa plików), 4 diagramy, 17 makiet oraz lokalne filmy.
+- Uzupełnienia: 5 tematów infrastruktury (API, MCP, Azure i obsługa plików), 6 diagramów, 17 makiet oraz lokalne filmy.
+- W lekcji Copilot Studio dodano rozszerzenie Work IQ: trzy warstwy Data/Memory/Inference, mapę przepływu, porównanie z Microsoft Graph i RAG/Azure AI Search, przykład briefingu, zagadnienia bezpieczeństwa oraz mini-test z wyjaśnieniami. To materiał uzupełniający i nie zmienia licznika 52 lekcji.
 - Pliki w `materialy/` zawierają prywatny kontekst rekrutacyjny zachowany z poprzedniego wydania. Nie są częścią publicznego kursu ani repozytorium GitHub Pages.
 
 ## Nauka i przenoszenie postępu

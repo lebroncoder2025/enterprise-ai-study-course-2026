@@ -68,7 +68,7 @@ panels.append(stageTitle,stageNote,stat,result,output);lab.append(panels);
 const move=create("div","rag-move"),prev=create("button","","← Poprzedni etap"),next=create("button","","Następny etap →");
 prev.type=next.type="button";move.append(prev,next);lab.append(move);
 lab.append(create("p","rag-disclaimer","Uwaga metodologiczna: dopasowanie słów to liczba nakładających się terminów, a oceny semantyczne są wpisane ręcznie. Nie jest to implementacja BM25 ani model embeddings. Jedyną zaimplementowaną fuzją rankingów jest RRF: 1/(60 + pozycja). Dane i procedury są fikcyjne."));
-const anchor=root.querySelector(".narrated-mp4,.explain-path,.course-guide,.module-header");
+const anchor=root.querySelector(".course-guide,.module-header");
 if(anchor)anchor.insertAdjacentElement("afterend",lab);else root.prepend(lab);
 let step=0;
 const normalize=t=>t.toLocaleLowerCase("pl").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g," ").trim().split(/\s+/).filter(x=>x.length>2||/^\d+$/.test(x));

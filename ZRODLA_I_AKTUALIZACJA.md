@@ -37,3 +37,11 @@
 ## Wersje interfejsów
 
 Copilot Studio posiada różne tryby (harnesses), których wygląd i funkcje zależą od konta. Dokumentacja jest aktualizowana często. Również plany i dostępność kreatorów ChatGPT/Claude i Copilot mogą się zmieniać. Kurs rozróżnia potwierdzone pojęcia, przykład autorski i funkcję zależną od planu/harnessu.
+
+
+## Dodatkowa aktualizacja treści — multimodalność i ewaluacja agentów
+
+- Microsoft Foundry vision models: https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/gpt-with-vision
+- Microsoft Foundry evaluation overview: https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-overview
+- Microsoft Foundry agent evaluators: https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/agent-evaluators
+- Multimodalne możliwości i ewaluatory zależą od konkretnego modelu, API, regionu i aktualnej wersji usługi. Treść kursu podaje zasady ogólne, a nie gwarantowane funkcje każdego deploymentu.

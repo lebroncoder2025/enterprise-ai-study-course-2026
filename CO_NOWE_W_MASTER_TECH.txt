@@ -1,24 +1,22 @@
-Enterprise AI Master TECH — specjalizacja pod lidera Agentic Workflows / MLOps
+KONSOLIDACJA Enterprise AI Master — GENAI / PROMPT 2026
 
-ZACHOWANO: 12 podstawowych lekcji PL/EN, 12 polskich filmów offline, starsze laboratoria,
-11 wcześniejszych lekcji narzędzi AI, 3 starsze laboratoria, całą dotychczasową kolorystykę.
+ZACHOWANO PEŁNY KURS Z POPRZEDNIEJ PACZKI:
+- rozdziały 01–29, prompty/kontekst/Code Interpreter, 76 pytań i 11 laboratoriów;
+- 12 polskich animacji MP4 oraz materiały bazowe i skrypty;
+- ciemną, granatowo-turkusową stylistykę akademii i układ mobilny.
 
-DODANO:
-- 4 nowe lekcje (26–29) o promptach, kontekście i Code Interpreter; razem 29 rozdziałów technicznych;
-- 16 nowych pytań: razem 76 w module technicznym;
-- 2 nowe laboratoria J/K: razem 11 w module technicznym;
-- 7 autorskich diagramów SVG na ciemnym tle;
-- oficjalne screenshoty Microsoft Foundry, Azure Portal/App Service, AI Search (ładowane online);
-- numery lekcji 01-25 i kafelki ścieżki podstawowej 01-08 w kolejności;
-- porównanie SFT/DPO/RFT/CPT, LoRA/QLoRA/Full, CPU/RAM vs GPU/VRAM;
-- przykłady skryptów Python uruchamiane na CPU i zapisywanie adaptera;
-- workflow patterns, retries/idempotency, tracing, SLO, data leakage, releases i rollback;
-- rozbudowany plan nauki i zestaw 20 pytań do lidera;
-- 4 lekcje prompt/context/Code Interpreter (26–29), 2 laboratoria J/K i 16 pytań;
-- 17 edukacyjnych makiet enterprise offline i galeria PNG;
-- lokalne polskie animacje jako alternatywa w zaawansowanym odtwarzaczu; link do oryginalnego wydawcy pozostaje dostępny.
+DODANO Z NOWEJ WERSJI:
+- rozdziały 30–48: AI/ML/GenAI, typy uczenia, mechanika LLM i transformerów, embeddingi,
+  prompt engineering, structured outputs, context engineering, bezpieczeństwo promptów,
+  NLP, metryki, ewaluacja, MLOps, governance, dobór architektury i case study;
+- 56 nowych pytań (łącznie 132), trzy laboratoria L–N (łącznie 14) i 156 pojęć w słowniku;
+- pięć nowych schematów SVG oraz mapę wymagań i plan nauki;
+- uzupełnienie multimodalności i oceny przebiegu narzędzi agenta;
+- oddzielną, responsywną stronę startową i szybki kurs pod adresem sprint.html.
 
-OGRANICZENIA:
-YouTube i screenshoty zewnętrzne wymagają internetu; embed może być zablokowany przez właściciela.
-Symulacje i dane firmowe są ilustracyjne; nie są środowiskiem enterprise environment ani wdrożeniem produkcyjnym.
-Dostępność funkcji Azure / Foundry zależy od regionu, modelu, API i tenanta.
+SCALONO Z WCZEŚNIEJSZĄ PRACĄ:
+- 17 interaktywnych makiet ekranów enterprise i galerię 17 obrazów PNG;
+- lokalne polskie animacje jako działającą offline alternatywę dla wideo w kursie zaawansowanym;
+- bezpośrednie linki do oryginalnych źródeł producentów.
+
+ŁĄCZNIE: 48 lekcji, 14 laboratoriów, 132 pytania i 156 pojęć. Sprawdź QA_MASTER_TECH_2026.md.

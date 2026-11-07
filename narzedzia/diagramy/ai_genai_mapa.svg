@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 365" role="img" aria-labelledby="ttl des">
+<title id="ttl">AI, Machine Learning, Deep Learning i GenAI</title><desc id="des">Zbiory technik AI obejmują ML oraz DL. Generative AI oznacza typ zadania, a LLM to przykładowy model oparty na Deep Learning.</desc>
+<rect width="1140" height="365" rx="20" fill="#0a182a"/>
+<text x="32" y="38" fill="#e8fff9" font-size="24" font-weight="bold" font-family="Arial">AI, ML i Deep Learning — a gdzie jest GenAI?</text>
+<text x="32" y="62" fill="#abcbd2" font-size="14" font-family="Arial">Hierarchia technik (po lewej) i zastosowanie generatywne (po prawej)</text>
+<rect x="30" y="85" rx="18" width="690" height="221" fill="#122a3d" stroke="#78e0ce" stroke-width="2"/>
+<text x="50" y="112" fill="#8aefcf" font-family="Arial" font-size="19" font-weight="bold">Artificial Intelligence (AI)</text>
+<rect x="71" y="131" rx="16" width="606" height="149" fill="#1b3448" stroke="#f6cd7c" stroke-width="2"/>
+<text x="90" y="158" fill="#fce8b9" font-family="Arial" font-size="18" font-weight="bold">Machine Learning (ML)</text>
+<rect x="117" y="180" rx="14" width="518" height="75" fill="#1d4a4c" stroke="#82e6d1" stroke-width="2"/>
+<text x="142" y="209" fill="#eafff7" font-family="Arial" font-size="18" font-weight="bold">Deep Learning</text>
+<text x="142" y="231" fill="#c0ddd9" font-family="Arial" font-size="13">Wielowarstwowe sieci; wiele LLM to transformatory</text>
+<path d="M 723 219 L 772 219 M 761 210 L 773 219 L 761 228" stroke="#9dbfbf" fill="none" stroke-width="2"/>
+<rect x="780" y="151" rx="17" width="328" height="132" fill="#23424a" stroke="#f6cd7c" stroke-width="2"/>
+<text x="801" y="185" fill="#fff5df" font-family="Arial" font-size="20" font-weight="bold">Generative AI (GenAI)</text>
+<text x="801" y="211" fill="#d2e4df" font-family="Arial" font-size="14">Typ zadania: generuj tekst,</text>
+<text x="801" y="231" fill="#d2e4df" font-family="Arial" font-size="14">obraz, kod, dźwięk...</text>
+<text x="801" y="254" fill="#e6ffd8" font-family="Arial" font-size="13">LLM to jeden z przykładów.</text>
+<text x="32" y="339" fill="#abcbd2" font-family="Arial" font-size="13">GenAI nie jest nazwą jednej architektury ani synonimem wszystkich sieci neuronowych.</text>
+</svg>

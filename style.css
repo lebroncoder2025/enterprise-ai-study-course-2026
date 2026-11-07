@@ -2,3 +2,9 @@
 
 [id]{scroll-margin-top:100px;}
 @media(max-width:750px){.topbar nav{flex-wrap:wrap;justify-content:flex-start!important;gap:7px 12px!important}.topbar nav a{white-space:nowrap}}
+
+/* Tablet navigation: keep the quick sprint within the viewport between phone and desktop widths. */
+@media (min-width:751px) and (max-width:1250px){.topbar{height:auto;min-height:75px;flex-wrap:wrap;gap:4px 14px;padding-top:10px;padding-bottom:10px}.topbar nav{order:3;flex:0 0 100%;width:100%;justify-content:flex-start;flex-wrap:wrap;gap:2px 12px}.topbar nav a{white-space:normal!important}.topbar .headright{margin-left:auto}}
+
+/* Mobile navigation: scroll the complete set of course links without clipping labels. */
+@media(max-width:750px){.topbar{min-width:0}.topbar nav{min-width:0;overflow-x:auto;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:8px!important;padding:2px 2px 9px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}.topbar nav a{flex:0 0 auto;white-space:nowrap!important;border:1px solid var(--line);border-radius:8px;padding:7px 9px!important}}

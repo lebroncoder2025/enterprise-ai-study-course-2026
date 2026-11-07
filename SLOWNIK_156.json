@@ -1,0 +1,938 @@
+[
+  {
+    "cat": "Podstawy",
+    "term": "Artificial Intelligence (AI)",
+    "definition": "Szeroka dziedzina systemów realizujących zadania wymagające inteligentnego przetwarzania.",
+    "example": "System reguł lub model uczony z danych."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Machine Learning (ML)",
+    "definition": "Metody dopasowywania modelu na podstawie przykładów zamiast pełnej listy sztywnych reguł.",
+    "example": "Model przewiduje opóźnienia zgłoszeń."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Deep Learning (DL)",
+    "definition": "Podzbiór ML używający wielowarstwowych sieci neuronowych.",
+    "example": "Transformer do języka."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Generative AI (GenAI)",
+    "definition": "Modele i systemy generujące treści lub struktury danych.",
+    "example": "Asystent pisze podsumowanie SOP."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Foundation model",
+    "definition": "Model bazowy wstępnie trenowany na szerokim zestawie danych i dostosowywany do wielu zastosowań.",
+    "example": "LLM wykorzystywany w RAG."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Large Language Model (LLM)",
+    "definition": "Model językowy uczony na dużych zbiorach tekstu, który generuje tokeny.",
+    "example": "Odpowiedź na pytanie z dokumentu."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Small Language Model (SLM)",
+    "definition": "Mniejszy model językowy o zwykle niższych wymaganiach zasobowych.",
+    "example": "Klasyfikacja lokalnie na urządzeniu."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Multimodal model",
+    "definition": "Model obsługujący kilka typów wejścia/wyjścia, np. obraz i tekst.",
+    "example": "Analiza diagramu w PDF."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Inference",
+    "definition": "Wykorzystanie wytrenowanego modelu do uzyskania predykcji bez zwykłej aktualizacji wag.",
+    "example": "LLM generuje odpowiedź."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Training",
+    "definition": "Proces dopasowywania parametrów modelu na danych.",
+    "example": "Uczenie regresji logistycznej."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Pretraining",
+    "definition": "Wstępny trening na bardzo szerokich danych i celach ogólnych.",
+    "example": "Przewidywanie kolejnych tokenów."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Token",
+    "definition": "Jednostka tekstu obsługiwana przez tokenizer: słowo, fragment lub znak.",
+    "example": "\"Warszawa\" może mieć kilka tokenów."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Tokenizer",
+    "definition": "Program dzielący tekst na tokeny i mapujący je na identyfikatory.",
+    "example": "User prompt → token IDs."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Vocabulary",
+    "definition": "Słownik identyfikatorów tokenów i ich tekstowych odpowiedników.",
+    "example": "Dekodowanie ID na \"Warszawa\"."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Weights / model parameters",
+    "definition": "Wyuczone liczby określające przekształcenia sieci.",
+    "example": "Macierz parametrów attention."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Bias parameter",
+    "definition": "Dodatkowy parametr przesunięcia w niektórych warstwach/modelach.",
+    "example": "w·x + b."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Tensor",
+    "definition": "Wielowymiarowa tablica liczb.",
+    "example": "Macierz wag 4096×4096."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Embedding",
+    "definition": "Wektor reprezentujący token, zdanie lub dokument zależnie od modelu.",
+    "example": "Embedding fragmentu SOP."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Transformer",
+    "definition": "Architektura sieci wykorzystująca m.in. mechanizm attention.",
+    "example": "Bazowy szkielet wielu LLM."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Attention",
+    "definition": "Mechanizm ważonego łączenia informacji między tokenami w danym kontekście.",
+    "example": "Wskazywanie relacji w zdaniu."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Query/Key/Value (QKV)",
+    "definition": "Projekcje wektorowe używane w warstwie attention do obliczania wag uwagi.",
+    "example": "Mnożenia QKᵀ i sumowanie V."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Logits",
+    "definition": "Nienormalizowane wyniki modelu dla możliwych tokenów lub klas.",
+    "example": "Warszawa 3,2; Kraków 1,1."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Softmax",
+    "definition": "Funkcja zamieniająca logity na rozkład prawdopodobieństw.",
+    "example": "Porównanie szans tokenów."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Temperature",
+    "definition": "Parametr zmieniający ostrość rozkładu prawdopodobieństw podczas dekodowania.",
+    "example": "Niższa temperatura = zwykle bardziej skupiony wybór."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Top-p / nucleus sampling",
+    "definition": "Wybór z najmniejszej grupy tokenów o skumulowanej masie prawdopodobieństwa co najmniej p.",
+    "example": "Ograniczenie losowania tokenów."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Top-k sampling",
+    "definition": "Ograniczenie losowania do k tokenów z najwyższym wynikiem.",
+    "example": "Losowanie spośród 20 kandydatów."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Context window",
+    "definition": "Limit tokenów dostępnych w określonej interakcji modelu.",
+    "example": "Selekcja istotnych chunks."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "KV cache",
+    "definition": "Bufor kluczy i wartości attention z poprzednich tokenów podczas generowania.",
+    "example": "Szybsze kolejne kroki inferencji."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "Quantization",
+    "definition": "Reprezentowanie wag mniejszą liczbą bitów kosztem potencjalnej dokładności.",
+    "example": "GGUF Q4 lokalnie."
+  },
+  {
+    "cat": "Podstawy",
+    "term": "GGUF",
+    "definition": "Format pliku używany w ekosystemie lokalnej inferencji, często ze skwantyzowanymi wagami.",
+    "example": "Model uruchomiony przez Ollama."
+  },
+  {
+    "cat": "ML",
+    "term": "Supervised learning",
+    "definition": "Uczenie z danymi wejściowymi i oczekiwanym wynikiem.",
+    "example": "Zgłoszenie → pilne/niepilne."
+  },
+  {
+    "cat": "ML",
+    "term": "Unsupervised learning",
+    "definition": "Uczenie bez gotowych etykiet, poszukiwanie struktury.",
+    "example": "K-means grupuje zgłoszenia."
+  },
+  {
+    "cat": "ML",
+    "term": "Self-supervised learning",
+    "definition": "Tworzenie sygnału uczącego z samych danych.",
+    "example": "Przewidywanie następnego tokenu."
+  },
+  {
+    "cat": "ML",
+    "term": "Reinforcement learning",
+    "definition": "Uczenie polityki działania na podstawie nagród i interakcji ze środowiskiem.",
+    "example": "Strategia na podstawie reward."
+  },
+  {
+    "cat": "ML",
+    "term": "Classification",
+    "definition": "Przewidywanie jednej z kategorii.",
+    "example": "Typ błędu w zgłoszeniu."
+  },
+  {
+    "cat": "ML",
+    "term": "Regression",
+    "definition": "Przewidywanie wartości liczbowej.",
+    "example": "Liczba dni do rozwiązania."
+  },
+  {
+    "cat": "ML",
+    "term": "Clustering",
+    "definition": "Grupowanie podobnych przykładów.",
+    "example": "Segmenty problemów technicznych."
+  },
+  {
+    "cat": "ML",
+    "term": "Anomaly detection",
+    "definition": "Wykrywanie obserwacji odbiegających od normy.",
+    "example": "Nietypowy odczyt czujnika."
+  },
+  {
+    "cat": "ML",
+    "term": "Linear regression",
+    "definition": "Model liniowy przewidujący wartość na podstawie współczynników.",
+    "example": "Przewidywany czas obsługi."
+  },
+  {
+    "cat": "ML",
+    "term": "Logistic regression",
+    "definition": "Model probabilistyczny często używany do klasyfikacji.",
+    "example": "Ryzyko opóźnienia tak/nie."
+  },
+  {
+    "cat": "ML",
+    "term": "Decision tree",
+    "definition": "Model z rozgałęzieniami według cech i progów.",
+    "example": "Kolejne warunki ryzyka."
+  },
+  {
+    "cat": "ML",
+    "term": "Random forest",
+    "definition": "Zespół wielu drzew decyzyjnych.",
+    "example": "Wynik uśredniony po drzewach."
+  },
+  {
+    "cat": "ML",
+    "term": "Gradient boosting",
+    "definition": "Sekwencyjne uczenie słabych modeli korygujących błędy wcześniejszych.",
+    "example": "Model tabelaryczny XGBoost."
+  },
+  {
+    "cat": "ML",
+    "term": "XGBoost",
+    "definition": "Popularna implementacja gradient boostingu na drzewach.",
+    "example": "Klasyfikacja ticketów."
+  },
+  {
+    "cat": "ML",
+    "term": "Feature engineering",
+    "definition": "Tworzenie i przetwarzanie cech użytecznych do treningu.",
+    "example": "Liczba incydentów w 30 dniach."
+  },
+  {
+    "cat": "ML",
+    "term": "Target / label",
+    "definition": "Wartość prawdy, którą model ma przewidywać.",
+    "example": "Czy rekord był opóźniony."
+  },
+  {
+    "cat": "ML",
+    "term": "Train/validation/test",
+    "definition": "Podział danych na uczenie, strojenie i niezależną ocenę.",
+    "example": "Chronologiczny split zgłoszeń."
+  },
+  {
+    "cat": "ML",
+    "term": "Cross-validation",
+    "definition": "Ocena modelu na kolejnych podziałach danych.",
+    "example": "K-fold dla danych i.i.d."
+  },
+  {
+    "cat": "ML",
+    "term": "Overfitting",
+    "definition": "Przeuczenie: dobry wynik na treningu, gorszy na nowych danych.",
+    "example": "Model zapamiętuje wyjątki."
+  },
+  {
+    "cat": "ML",
+    "term": "Data leakage",
+    "definition": "Informacja niedostępna w rzeczywistej predykcji trafia do treningu lub walidacji.",
+    "example": "Data zamknięcia w predykcji czasu zamknięcia."
+  },
+  {
+    "cat": "ML",
+    "term": "Gradient descent",
+    "definition": "Optymalizacja parametrów przez ruch w kierunku zmniejszania funkcji straty.",
+    "example": "w ← w − lr·grad."
+  },
+  {
+    "cat": "ML",
+    "term": "Backpropagation",
+    "definition": "Wyznaczanie gradientów przez kolejne warstwy sieci.",
+    "example": "loss.backward() w PyTorch."
+  },
+  {
+    "cat": "ML",
+    "term": "Learning rate",
+    "definition": "Wielkość kroku aktualizacji parametrów.",
+    "example": "Zbyt duży krok może destabilizować trening."
+  },
+  {
+    "cat": "ML",
+    "term": "Loss function",
+    "definition": "Funkcja liczbowa mierząca błąd uczenia.",
+    "example": "Cross-entropy klasyfikacji."
+  },
+  {
+    "cat": "ML",
+    "term": "Regularization",
+    "definition": "Mechanizmy ograniczające przeuczenie modelu.",
+    "example": "L2 lub dropout."
+  },
+  {
+    "cat": "ML",
+    "term": "Baseline",
+    "definition": "Prosta metoda odniesienia.",
+    "example": "Reguła biznesowa lub model prosty."
+  },
+  {
+    "cat": "ML",
+    "term": "Accuracy",
+    "definition": "Odsetek poprawnych klasyfikacji.",
+    "example": "Nieadekwatna przy bardzo rzadkiej klasie."
+  },
+  {
+    "cat": "ML",
+    "term": "Precision",
+    "definition": "TP/(TP+FP), trafność wśród wykrytych pozytywów.",
+    "example": "Ile alarmów było prawdziwych."
+  },
+  {
+    "cat": "ML",
+    "term": "Recall",
+    "definition": "TP/(TP+FN), wykrycie rzeczywistych pozytywów.",
+    "example": "Ile incydentów wyłapano."
+  },
+  {
+    "cat": "ML",
+    "term": "F1 score",
+    "definition": "Średnia harmoniczna precision i recall.",
+    "example": "Bilans wykrycia i fałszywych alarmów."
+  },
+  {
+    "cat": "ML",
+    "term": "Confusion matrix",
+    "definition": "Tabela TP, FP, FN, TN pokazująca rodzaje błędów.",
+    "example": "Analiza klasyfikacji ryzyka."
+  },
+  {
+    "cat": "ML",
+    "term": "MAE",
+    "definition": "Średni błąd bezwzględny dla regresji.",
+    "example": "Pomyłka średnio o 1,8 dnia."
+  },
+  {
+    "cat": "ML",
+    "term": "RMSE",
+    "definition": "Pierwiastek błędu średniokwadratowego; mocniej waży duże błędy.",
+    "example": "Wrażliwość na duże odchylenia."
+  },
+  {
+    "cat": "ML",
+    "term": "Calibration",
+    "definition": "Zgodność przewidywanych prawdopodobieństw z częstością zdarzeń.",
+    "example": "Czy grupa z p=0,8 ma ~80% zdarzeń."
+  },
+  {
+    "cat": "Fine-tuning",
+    "term": "Fine-tuning",
+    "definition": "Dodatkowy trening wyuczonego modelu, aktualizujący parametry.",
+    "example": "Dostosowanie do formatu odpowiedzi."
+  },
+  {
+    "cat": "Fine-tuning",
+    "term": "SFT",
+    "definition": "Supervised Fine-Tuning na przykładach wejście→oczekiwane wyjście.",
+    "example": "Dialogi instruktażowe."
+  },
+  {
+    "cat": "Fine-tuning",
+    "term": "DPO",
+    "definition": "Direct Preference Optimization z parami preferowanej i odrzuconej odpowiedzi.",
+    "example": "Styl bardziej zgodny z ocenami."
+  },
+  {
+    "cat": "Fine-tuning",
+    "term": "RFT",
+    "definition": "Reinforcement Fine-Tuning wykorzystujący ocenę generowanych odpowiedzi jako sygnał nagrody.",
+    "example": "Optymalizacja względem graderów."
+  },
+  {
+    "cat": "Fine-tuning",
+    "term": "LoRA",
+    "definition": "Low-Rank Adaptation: trening małych macierzy adaptera przy zamrożonej bazie.",
+    "example": "A i B zamiast całej macierzy W."
+  },
+  {
+    "cat": "Fine-tuning",
+    "term": "QLoRA",
+    "definition": "Trening adaptera LoRA z kwantyzowaną zamrożoną bazą.",
+    "example": "Oszczędność pamięci GPU."
+  },
+  {
+    "cat": "Fine-tuning",
+    "term": "PEFT",
+    "definition": "Parameter-Efficient Fine-Tuning; rodzina metod uczących niewielką liczbę parametrów.",
+    "example": "LoRA lub adaptery."
+  },
+  {
+    "cat": "Fine-tuning",
+    "term": "Continued pretraining",
+    "definition": "Dalszy ogólny trening modelu na dodatkowym korpusie tekstu.",
+    "example": "Język techniczny domeny."
+  },
+  {
+    "cat": "Fine-tuning",
+    "term": "Instruction tuning",
+    "definition": "Dostrajanie do wykonywania instrukcji użytkownika.",
+    "example": "Przykłady pytań i odpowiedzi."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Prompt",
+    "definition": "Instrukcja, pytanie lub kontekst przekazany modelowi.",
+    "example": "„Podsumuj ten dokument”."
+  },
+  {
+    "cat": "Prompting",
+    "term": "System message",
+    "definition": "Instrukcja wyższej warstwy środowiska modelu, zależna od API.",
+    "example": "Zasady ogólne."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Developer message",
+    "definition": "Reguły dostarczane przez twórcę aplikacji, jeśli API obsługuje rolę.",
+    "example": "Format i korzystanie z narzędzi."
+  },
+  {
+    "cat": "Prompting",
+    "term": "User message",
+    "definition": "Bieżąca prośba i materiały użytkownika.",
+    "example": "Pytanie o status dokumentu."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Assistant message",
+    "definition": "Treść wygenerowana przez model; może obejmować zapowiedź narzędzia.",
+    "example": "Odpowiedź lub tool call."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Tool result",
+    "definition": "Wynik wywołanej usługi dostarczany modelowi jako dane.",
+    "example": "Odpowiedź z Search lub API."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Prompt template",
+    "definition": "Szablon instrukcji z parametrami.",
+    "example": "„Oceń {ticket} według {criteria}”."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Zero-shot prompting",
+    "definition": "Instrukcja bez przykładów wejścia i wyjścia.",
+    "example": "Przypisz kategorię."
+  },
+  {
+    "cat": "Prompting",
+    "term": "One-shot prompting",
+    "definition": "Instrukcja z jednym przykładem.",
+    "example": "Jeden rekord z etykietą."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Few-shot prompting",
+    "definition": "Instrukcja z kilkoma przykładami.",
+    "example": "Trzy wzorce JSON."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Task decomposition",
+    "definition": "Rozbijanie złożonego zadania na mniejsze sprawdzalne kroki.",
+    "example": "Wyszukaj → sprawdź → podsumuj."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Prompt chaining",
+    "definition": "Kolejne wywołania modeli, których wyniki stanowią wejścia do następnych.",
+    "example": "Ekstrakcja, walidacja, podsumowanie."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Structured outputs",
+    "definition": "Wymuszanie/szczególne wspieranie odpowiedzi w formacie strukturalnym.",
+    "example": "JSON zgodny ze schematem."
+  },
+  {
+    "cat": "Prompting",
+    "term": "JSON Schema",
+    "definition": "Opis dozwolonych pól, typów i ograniczeń obiektu JSON.",
+    "example": "`category` jako enum."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Temperature",
+    "definition": "Parametr rozkładu doboru tokenów, nie miara prawdziwości.",
+    "example": "Porównanie kreatywności."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Context engineering",
+    "definition": "Zarządzanie wyborem i składem informacji przekazywanych modelowi.",
+    "example": "Instrukcje + historia + RAG + tools."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Prompt injection",
+    "definition": "Złośliwe instrukcje w mniej zaufanych danych próbujące zmienić zachowanie modelu.",
+    "example": "„Ignoruj zasady” w PDF."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Grounding",
+    "definition": "Oparcie generowania na podanych źródłach.",
+    "example": "Cytaty z dokumentu."
+  },
+  {
+    "cat": "Prompting",
+    "term": "Abstention",
+    "definition": "Świadome nieudzielenie odpowiedzi bez wystarczających podstaw.",
+    "example": "„Brak aktualnej procedury”."
+  },
+  {
+    "cat": "RAG",
+    "term": "Retrieval-Augmented Generation (RAG)",
+    "definition": "Architektura wyszukująca zewnętrzne informacje i podająca je LLM jako kontekst.",
+    "example": "SOP assistant."
+  },
+  {
+    "cat": "RAG",
+    "term": "Ingestion",
+    "definition": "Zasilenie systemu dokumentami i danymi.",
+    "example": "Pobranie PDF z repozytorium."
+  },
+  {
+    "cat": "RAG",
+    "term": "Chunking",
+    "definition": "Podział dokumentów na fragmenty.",
+    "example": "Sekcje procedury."
+  },
+  {
+    "cat": "RAG",
+    "term": "Indexing",
+    "definition": "Przygotowanie struktur do efektywnego wyszukania.",
+    "example": "Indeks Azure AI Search."
+  },
+  {
+    "cat": "RAG",
+    "term": "Semantic search",
+    "definition": "Wyszukiwanie przez znaczenie, często z embeddingami.",
+    "example": "Podobne pojęcia różnymi słowami."
+  },
+  {
+    "cat": "RAG",
+    "term": "Vector search",
+    "definition": "Wyszukiwanie według podobieństwa wektorów.",
+    "example": "Nearest neighbors."
+  },
+  {
+    "cat": "RAG",
+    "term": "BM25",
+    "definition": "Klasyczny ranking dopasowania słów w dokumentach.",
+    "example": "Dokładny numer SOP."
+  },
+  {
+    "cat": "RAG",
+    "term": "Hybrid search",
+    "definition": "Łączenie wyników leksykalnych i wektorowych.",
+    "example": "Dokładne terminy + semantyka."
+  },
+  {
+    "cat": "RAG",
+    "term": "Reranking",
+    "definition": "Ponowne ocenienie kolejności wstępnie znalezionych fragmentów.",
+    "example": "Top10 → lepsze top5."
+  },
+  {
+    "cat": "RAG",
+    "term": "Top-K",
+    "definition": "Liczba najlepszych wyników pobranych do dalszego etapu.",
+    "example": "5 chunks do kontekstu."
+  },
+  {
+    "cat": "RAG",
+    "term": "RRF",
+    "definition": "Reciprocal Rank Fusion, metoda łączenia list rankingowych.",
+    "example": "Łączenie BM25 i vector list."
+  },
+  {
+    "cat": "RAG",
+    "term": "ACL",
+    "definition": "Access Control List opisująca uprawnienia do zasobów.",
+    "example": "Filtruj dokumenty do uprawnionych."
+  },
+  {
+    "cat": "RAG",
+    "term": "Faithfulness",
+    "definition": "Miara zgodności twierdzeń odpowiedzi ze źródłami.",
+    "example": "Czy cytat potwierdza wniosek."
+  },
+  {
+    "cat": "RAG",
+    "term": "Retrieval Recall@K",
+    "definition": "Czy rzeczywiście potrzebne źródła znalazły się w top K.",
+    "example": "Wynik wyszukiwania gold doc."
+  },
+  {
+    "cat": "RAG",
+    "term": "Citation accuracy",
+    "definition": "Poprawność wskazania źródeł potwierdzających odpowiedź.",
+    "example": "Czy sekcja 2 wspiera zdanie."
+  },
+  {
+    "cat": "Agents",
+    "term": "AI agent",
+    "definition": "System, w którym model może dobierać działania i korzystać z narzędzi.",
+    "example": "Plan: szukaj, oblicz, zatwierdź."
+  },
+  {
+    "cat": "Agents",
+    "term": "Agentic workflow",
+    "definition": "Przepływ z LLM/narzędziami, czasem z autonomicznym wyborem kroków.",
+    "example": "Proces z condition i tool calling."
+  },
+  {
+    "cat": "Agents",
+    "term": "Deterministic workflow",
+    "definition": "W dużej mierze z góry ustalona kolejność działań.",
+    "example": "Topic/Flow ze stałymi warunkami."
+  },
+  {
+    "cat": "Agents",
+    "term": "Generative orchestration",
+    "definition": "Dobieranie dostępnych narzędzi i etapów przez model w ramach konfiguracji.",
+    "example": "Agent wybiera search albo API."
+  },
+  {
+    "cat": "Agents",
+    "term": "Tool calling",
+    "definition": "Model wskazuje narzędzie i argumenty; runtime je wykonuje.",
+    "example": "Wywołanie `lookup_status`."
+  },
+  {
+    "cat": "Agents",
+    "term": "Code Interpreter",
+    "definition": "Izolowane wykonanie kodu, zwykle Python, na zlecenie modelu.",
+    "example": "Analiza pliku CSV."
+  },
+  {
+    "cat": "Agents",
+    "term": "Runtime / harness",
+    "definition": "Oprogramowanie zarządzające pętlą model→tool→wynik, stanem i kontrolami.",
+    "example": "Agent Service lub własny backend."
+  },
+  {
+    "cat": "Agents",
+    "term": "Human-in-the-Loop (HITL)",
+    "definition": "Wymagana decyzja człowieka w procesie.",
+    "example": "Zatwierdzenie zmiany stanu."
+  },
+  {
+    "cat": "Agents",
+    "term": "Idempotency key",
+    "definition": "Klucz chroniący przed powtórzeniem efektu zapisu po retry.",
+    "example": "Nie tworzyć podwójnego ticketu."
+  },
+  {
+    "cat": "Agents",
+    "term": "Timeout",
+    "definition": "Limit czasu wykonania operacji.",
+    "example": "Przerwanie nieskończonego narzędzia."
+  },
+  {
+    "cat": "Agents",
+    "term": "Retry",
+    "definition": "Ponowienie operacji po błędzie, z kontrolą efektów.",
+    "example": "Powtórzenie odczytu API."
+  },
+  {
+    "cat": "Agents",
+    "term": "Circuit breaker",
+    "definition": "Mechanizm ograniczający dalsze wywołania usługi przy powtarzających się awariach.",
+    "example": "Fallback po błędach API."
+  },
+  {
+    "cat": "MLOps",
+    "term": "MLOps",
+    "definition": "Praktyki automatyzacji cyklu życia systemów ML.",
+    "example": "Train → registry → deploy."
+  },
+  {
+    "cat": "MLOps",
+    "term": "LLMOps",
+    "definition": "Operacje specyficzne dla aplikacji LLM: prompt, RAG, tools, evals.",
+    "example": "Monitoring jakości odpowiedzi."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Observability",
+    "definition": "Możliwość odtworzenia i zrozumienia działania systemu z metryk/logów/śladów.",
+    "example": "Dlaczego request się opóźnił."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Tracing",
+    "definition": "Ślady kolejnych etapów requestu z czasami i błędami.",
+    "example": "Search → model → validator."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Latency",
+    "definition": "Czas potrzebny na odpowiedź lub krok.",
+    "example": "p95 response time."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Token telemetry",
+    "definition": "Pomiary liczby tokenów i ich kosztu.",
+    "example": "Input/output tokens per task."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Model registry",
+    "definition": "Rejestr wersji modeli i artefaktów z metadanymi.",
+    "example": "Wdrożenie konkretnego checkpointu."
+  },
+  {
+    "cat": "MLOps",
+    "term": "CI/CD",
+    "definition": "Automatyzacja testowania i publikacji zmian.",
+    "example": "Wdrożenie po przejściu evals."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Canary deployment",
+    "definition": "Wdrożenie nowej wersji do małej części realnego ruchu.",
+    "example": "5% użytkowników na nowym promptcie."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Shadow mode",
+    "definition": "Równoległe uruchamianie kandydata bez pokazywania jego wyników.",
+    "example": "Test na kopii ruchu."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Rollback",
+    "definition": "Powrót do poprzedniej wersji konfiguracji lub modelu.",
+    "example": "Cofnięcie regresji."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Data drift",
+    "definition": "Zmiana rozkładu danych wejściowych.",
+    "example": "Nowa kategoria zgłoszeń."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Concept drift",
+    "definition": "Zmiana relacji pomiędzy wejściami a wynikiem.",
+    "example": "Stare predyktory przestają działać."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Golden dataset",
+    "definition": "Referencyjne przypadki testowe i kryteria oceny.",
+    "example": "Zestaw pytań SOP."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Eval harness",
+    "definition": "Zautomatyzowana infrastruktura uruchamiania ocen.",
+    "example": "Evals po zmianie promptu."
+  },
+  {
+    "cat": "MLOps",
+    "term": "LLM-as-a-Judge",
+    "definition": "Wykorzystanie innego modelu do oceny wygenerowanej odpowiedzi.",
+    "example": "Ocena zgodności z rubryką."
+  },
+  {
+    "cat": "MLOps",
+    "term": "Cost per successful task",
+    "definition": "Koszt podzielony przez liczbę naprawdę udanych zadań.",
+    "example": "Koszt biznesowego rezultatu."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Azure App Service",
+    "definition": "Zarządzany hosting aplikacji web i API.",
+    "example": "Backend Flask."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Azure AI Search",
+    "definition": "Usługa indeksowania i wyszukiwania pełnotekstowego, wektorowego i hybrydowego.",
+    "example": "Warstwa retrieval."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Microsoft Foundry",
+    "definition": "Platforma rozwijania, testowania i operacji rozwiązań AI, zależna od wersji i oferty.",
+    "example": "Modele, agenci, ewaluacja."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Microsoft Copilot Studio",
+    "definition": "Platforma do projektowania i publikowania agentów biznesowych.",
+    "example": "Agent dostępny w Teams."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Microsoft Entra ID",
+    "definition": "Platforma tożsamości i uwierzytelniania firmy Microsoft.",
+    "example": "SSO użytkownika."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Managed Identity",
+    "definition": "Tożsamość usługi Azure ułatwiająca uwierzytelnianie bez kluczy w kodzie.",
+    "example": "App Service do Search."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Azure Key Vault",
+    "definition": "Usługa przechowywania sekretów i kluczy.",
+    "example": "Bezpieczne trzymanie API secret."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "SSO",
+    "definition": "Single Sign-On: jedno logowanie do powiązanych usług.",
+    "example": "Logowanie firmowym kontem."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Authentication",
+    "definition": "Weryfikacja tożsamości użytkownika lub usługi.",
+    "example": "Sprawdzenie tokenu dostępu."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Authorization",
+    "definition": "Sprawdzenie, czy wykonanie danej operacji jest dozwolone.",
+    "example": "Prawo do dokumentu SOP."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "PII",
+    "definition": "Dane pozwalające zidentyfikować osobę.",
+    "example": "Adres i identyfikator pracownika."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "GDPR/RODO",
+    "definition": "Unijne zasady ochrony danych osobowych.",
+    "example": "Minimalizacja i retencja logów."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "GxP",
+    "definition": "Zasady dobrej praktyki w regulowanych procesach farmaceutycznych.",
+    "example": "GMP lub GCP."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "CSV",
+    "definition": "Computer System Validation: udokumentowane potwierdzenie zamierzonego działania systemu.",
+    "example": "Plan walidacji i RTM."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "SOX",
+    "definition": "Sarbanes-Oxley Act: m.in. ramy kontroli sprawozdawczości finansowej.",
+    "example": "Kontrole zmian systemu finansowego."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "ITGC",
+    "definition": "Ogólne kontrole IT wspierające wiarygodność systemów.",
+    "example": "Access, change management."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Data lineage",
+    "definition": "Udokumentowany przepływ pochodzenia i przekształceń danych.",
+    "example": "Skąd pochodzi pole predykcji."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Fairness",
+    "definition": "Ocena i ograniczanie nieuzasadnionej nierówności wyników między grupami.",
+    "example": "Porównanie błędów według podgrup."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "Explainability",
+    "definition": "Możliwość wyjaśnienia podstawy działania lub decyzji systemu.",
+    "example": "Interpretacja cech lub źródeł."
+  },
+  {
+    "cat": "Enterprise",
+    "term": "AI governance",
+    "definition": "Zasady nadzoru nad AI, ryzykiem, zmianami i odpowiedzialnością.",
+    "example": "Rejestr modelu i approval."
+  }
+]

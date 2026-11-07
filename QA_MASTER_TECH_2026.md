@@ -1,29 +1,27 @@
-# Kontrola jakości — Enterprise AI Master TECH (2026-11-06)
+# Kontrola jako?ci ? Enterprise AI Master GenAI Prompt 2026
 
-## Zakończone testy
+## Zawarto?? aktywnego wydania
+- 48 lekcji, 132 pytania z obja?nieniami, 14 laboratori?w oraz 156 hase? s?ownika.
+- 17 edukacyjnych makiet ekran?w z lokaln? galeri? PNG oraz 12 kr?tkich polskich animacji offline.
+- Zachowano granatowo-turkusow? stylistyk? paczki ?r?d?owej. Portal prowadzi do pe?nej akademii, wersji jednoplikowej, kursu bazowego, laboratori?w, galerii i sprintu.
+- Uzupe?niono multimodalne GenAI oraz ewaluacj? agenta uwzgl?dniaj?c? zar?wno ko?cowy wynik, jak i przebieg u?ycia narz?dzi.
 
-- Nowy moduł przetestowany na silniku Chromium po inline złożeniu CSS/JS (środowisko testowe blokuje adresy `localhost` i `file://`, dlatego test lokalnej nawigacji przeprowadzono na równoważnym dokumencie inline).
-- **29** rozdziałów w module narzędzi / fine-tuningu / Agentic / MLOps; numeracja kafelków i bocznego menu **01–29**.
-- **11** laboratoriów w module: 3 zachowane + 8 dodanych łącznie; sprawdzono obliczenia gradientu, parametrów LoRA, 4-bit memory, tracer agenta, confusion matrix i release gate.
-- **76** pytań z wyborem odpowiedzi i wyjaśnieniami.
-- Podstawowy kurs: 8 kafelków w ścieżce priorytetowej wyświetla teraz 01–08; skrypt uruchamia się bez błędów JS.
-- Widok 390 px: brak poziomego overflow w rozdziale Azure Enterprise.
-- 6 skryptów Pythona (licząc 4 podstawowe + 2 architektury): uruchomiono lokalnie z poprawnymi wynikami; LoRA mini przykład: MSE z 0.046 do blisko 0.
-- Zestaw plików `index.html`, `START_TUTAJ.html` i `narzedzia/index.html`: brak brakujących lokalnych plików JS/CSS/MP4.
-- 7 schematów SVG ładuje się w samodzielnym kursie dzięki data URI; rozdziały Foundry, Azure i fine-tuning zachowują czytelność i kolorystykę.
+## Kontrole wykonane na aktywnym folderze i ZIP
+- Chromium: portal, akademia, akademia jednoplikowa, sprint, kurs zaawansowany, makiety i galeria.
+- Szeroko?ci 320, 360, 390, 430, 768, 1024 i 1440 px: brak poziomego przepe?nienia w sprawdzonych widokach.
+- Akademia: 48 kart; trasy lekcji 30 i 42 otwieraj? tre?ci uzupe?niaj?ce; quiz zg?asza 132 pytania.
+- Galeria ?aduje 17/17 obraz?w; w sprawdzonych widokach brak wyj?tk?w JavaScript.
+- Zrzuty ekranu portalu i akademii od?wie?one; mobilny podgl?d zapisany jako widok 390 ? 844 px.
+- ZIP sprawdzony `testzip()` i zgodno?ci? liczby plik?w z aktywnym folderem.
+- Prywatny ZIP ?r?d?owy zachowany w `Resources/Archive/2026-11-07`; poprzedni aktywny wariant TECH r?wnie? zarchiwizowany przed usuni?ciem z `Preparation`.
 
-## Czego nie potwierdzam
+## Ograniczenia
+- Nie testowano po??czenia z rzeczywistym tenantem Microsoft ani wdro?enia Azure, Foundry czy Copilot Studio.
+- Linki do dokumentacji i wideo wydawc?w wymagaj? internetu i mog? zmienia? si? niezale?nie od kursu; w?asne animacje s? dost?pne lokalnie.
+- Symulacje s? edukacyjne i nie zast?puj? test?w bezpiecze?stwa, walidacji GxP ani ewaluacji produkcyjnej.
 
-- Nie mam dostępu do zalogowanego tenanta Microsoft, więc **nie testowałem prawdziwego deploymentu Foundry**, Copilot Studio ani App Service.
-- W testowej przeglądarce zewnętrzne strony i lokalny serwer są blokowane, więc **nie potwierdzam działania każdego osadzonego wideo YouTube ani każdego zewnętrznego screenshotu**. Są oryginalne adresy źródłowe, alternatywna domena w odtwarzaczu i bezpośrednie linki.
-- Każda funkcja Azure wymaga sprawdzenia statusu GA/Preview, zgodności regionu, modelu, API, rodzaju usługi i polityk tenant.
-- Laboratoria są symulacjami edukacyjnymi, a nie integracjami produkcyjnymi. Testowane obliczenia matematyczne są rzeczywiste na uproszczonych danych.
-- To kurs techniczny, nie formalna dokumentacja enterprise environment i nie zastępuje procedur GxP.
-
-
-## Konsolidacja — 2026-11-07
-
-- Portal startowy prowadzi do kursu głównego, 29-rozdziałowego toolkit, sprintu, wersji jednoplikowej i galerii makiet.
-- Dodano 17 edukacyjnych makiet offline oraz 17 widoków PNG; autentyczne zrzuty producentów w kursie technicznym nadal pochodzą ze wskazanych źródeł online.
-- Zaawansowany odtwarzacz używa lokalnej polskiej animacji tam, gdzie jest dostępna; oryginalny materiał wydawcy pozostaje opcjonalny.
-- Testy konsolidacji dopisuje się po ich wykonaniu; ten wpis nie deklaruje jeszcze wyniku QA.
+## ?r?d?a techniczne
+- Microsoft Foundry ? evaluation overview: https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-overview
+- Microsoft Foundry ? agent evaluators: https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/agent-evaluators
+- Microsoft Foundry ? vision models: https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/gpt-with-vision
+- Microsoft Foundry ? evaluate generative AI applications: https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app

@@ -2,6 +2,8 @@ name: Verify course quality and media
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,6 +22,8 @@ jobs:
           node --check course-ml.js
           node --check course-enterprise.js
           node --check course-extra.js
+          node --check course-media.js
+          node --check course-rag-lab.js
       - name: Verify HTML, local images and absence of employer references
         run: |
           python - <<'PY'
@@ -29,8 +33,16 @@ jobs:
           root=Path('.')
           html=(root/'index.html').read_text(encoding='utf-8')
           assert 'course-guided.js' in html and 'course-guided.css' in html
+          assert 'course-media.js' in html and 'course-rag-lab.js' in html
+          assert 'course-interactive.css' in html
+          media=(root/'course-media.js').read_text(encoding='utf-8')
+          rag=(root/'course-rag-lab.js').read_text(encoding='utf-8')
+          assert media.count('"yt":')>=24, 'restored video collection'
+          assert 'youtube-nocookie.com/embed/' in media and 'addEventListener("click"' in media
+          for p in ['rag-role','rag-query','rag-mode','rag-topk','1/(60+']:
+              assert p in rag, p
           assert not re.search(r'roche|rekrutacj|rozmow.{0,25}(techniczn|rekrutacyjn|liderem)', html, re.I)
-          for fp in ['course-guided.js','course-guided.css','course-terms.js','course-terms.css','course-explanations.js','course-explanations.css','assets/screens/foundry.png','assets/diagrams/enterprise_rag.svg']:
+          for fp in ['course-guided.js','course-guided.css','course-terms.js','course-terms.css','course-explanations.js','course-explanations.css','assets/screens/foundry.png','assets/diagrams/enterprise_rag.svg','course-media.js','course-rag-lab.js','course-interactive.css']:
               assert (root/fp).is_file(),fp
           for fp in ['guide-ml.mp4','guide-llm.mp4','guide-rag.mp4','guide-finetune.mp4','guide-agents.mp4','guide-mlops.mp4']:
               f=root/'assets/videos'/fp

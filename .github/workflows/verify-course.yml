@@ -47,6 +47,8 @@ jobs:
           Check().feed(html)
           print('HTML and media checks passed')
           PY
+      - name: Install FFmpeg / ffprobe
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Verify narrated MP4 contain audio
         run: |
           for video in assets/videos/guide-*.mp4; do

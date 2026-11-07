@@ -1,10 +1,10 @@
 # Enterprise AI Academy — jedna ścieżka nauki
 
-10 działów, 52 pełne lekcje, 16 interaktywnych laboratoriów, quiz 144 pytań, lokalne filmy i makiety. Wszystkie materiały dostępne ze strony głównej `index.html`. Obrazy i krótkie animacje działają z GitHub Pages, bez zewnętrznego hotlinkowania.
+10 działów, 52 lekcje główne i 5 praktycznych tematów API/MCP/Azure, 16 laboratoriów, quiz z 144 pytaniami, lokalne filmy i makiety. Wszystkie materiały dostępne ze strony głównej `index.html`. Obrazy i krótkie animacje działają z GitHub Pages, bez zewnętrznego hotlinkowania.
 
-## Jak przenie?? post?p mi?dzy urz?dzeniami
+## Jak przenieść postęp między urządzeniami
 
-Post?p, odpowiedzi i notatki s? przechowywane lokalnie w przegl?darce. Na stronie startowej wybierz **Eksportuj post?p**, przenie? pobrany plik JSON na drugie urz?dzenie i wybierz **Importuj post?p**. Import scala uko?czone lekcje; nic nie jest wysy?ane na serwer.
+Postęp, odpowiedzi quizu i notatki są przechowywane lokalnie w przeglądarce. Na stronie startowej wybierz **Eksportuj postęp**, przenieś pobrany plik JSON na drugie urządzenie i wybierz **Importuj postęp**. Import scala ukończone lekcje; dane nie są wysyłane na serwer. Pasek postępu obejmuje 52 lekcje główne; pięć tematów infrastruktury to materiały uzupełniające.
 
 ## Program
 1. **Fundamenty AI, ML i Data Science** — 6 lekcji.

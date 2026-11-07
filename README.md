@@ -1,30 +1,32 @@
-# Enterprise AI Academy — jedna ścieżka nauki
+# Enterprise AI Academy
 
-10 działów, 52 lekcje główne i 5 praktycznych tematów API/MCP/Azure, 16 laboratoriów, quiz z 144 pytaniami, lokalne filmy i makiety. Wszystkie materiały dostępne ze strony głównej `index.html`. Obrazy i krótkie animacje działają z GitHub Pages, bez zewnętrznego hotlinkowania.
+An offline-friendly, responsive learning path for AI, machine learning, LLM applications, agent workflows, evaluation and MLOps.
 
-## Jak przenieść postęp między urządzeniami
+## Course map
 
-Postęp, odpowiedzi quizu i notatki są przechowywane lokalnie w przeglądarce. Na stronie startowej wybierz **Eksportuj postęp**, przenieś pobrany plik JSON na drugie urządzenie i wybierz **Importuj postęp**. Import scala ukończone lekcje; dane nie są wysyłane na serwer. Pasek postępu obejmuje 52 lekcje główne; pięć tematów infrastruktury to materiały uzupełniające.
+- 10 sections and 52 core lessons tracked by the progress bar
+- 5 supplemental infrastructure topics covering APIs, MCP, Azure and file workflows
+- 16 hands-on labs and 144 quiz questions with explanations
+- Local video, diagrams and clearly labelled educational interface mockups
 
-## Program
-1. **Fundamenty AI, ML i Data Science** — 6 lekcji.
-2. **LLM, tokeny, transformery i embeddingi** — 3 lekcji.
-3. **Prompt Engineering i zarządzanie kontekstem** — 10 lekcji.
-4. **RAG, Azure AI Search, Foundry i architektura** — 3 lekcji.
-5. **Trening i fine-tuning modeli** — 4 lekcji.
-6. **Agenci, workflow, Copilot Studio i Code Interpreter** — 5 lekcji.
-7. **ChatGPT, Claude, Codex, GitHub Copilot i M365** — 6 lekcji.
-8. **Ewaluacja, MLOps, LLMOps, governance i koszty** — 8 lekcji.
-9. **GxP, SOX i kontrole — niezależnie od AI** — 4 lekcji.
-10. **Projekt końcowy i decyzje architektoniczne** — 3 lekcji.
+The five supplemental topics extend the course but are not counted as additional core lessons in the progress tracker.
 
-## Ważne
+## Study flow
 
-- To niezależny projekt edukacyjny. Nie przedstawia rzeczywistych tenantów Microsoft/firm, a makiety są podpisane.
-- Zewnętrzne filmy producentów mogą nie zezwalać na embed; krótkie lokalne filmy działają bez tego ograniczenia.
-- Kod i przykłady są demonstracyjne, nie zastępują walidacji systemów podlegających GxP lub SOX.
-- Archiwalne wersje kursu nie są publikowane w aktualnym drzewie witryny, co usuwa z aktualnej strony duplikaty i stare odniesienia. Historia Git repozytorium pozostaje osobnym zagadnieniem.
+For each topic, learn the definition, understand the mechanism, inspect an example, consider its risks, then complete the exercise. The home page includes a short guide and direct search shortcuts to supplemental topics.
 
-## Pojęcia PL/EN i naturalny lektor
+## Move learning progress between devices
 
-Kurs objaśnia terminy w akapitach i diagramach (np. `logits` = surowe oceny tokenów; `softmax` = rozkład prawdopodobieństwa). W częściach LLM i ML znajdują się również rozpisane przykłady rachunkowe. Krótkie wideo `assets/videos/guide-*.mp4` jest generowane w GitHub Actions polskim głosem neuronowym `pl-PL-MarekNeural` (awaryjnie gTTS). Wideo działa offline po pobraniu; generowanie wymaga dostępu do zewnętrznej usługi TTS, dlatego pozostaje wyraźnie oddzielone od wyświetlania kursu. Brak powodzenia generacji nie uruchamia mechanicznego lektora eSpeak.
+Progress, quiz answers, builder state and notes are stored in the browser on your device. Select **Export progress** to download a JSON file; on another device select **Import progress** to merge that saved state. The course does not upload this data to a server.
+
+## Offline use
+
+Open `START_TUTAJ.html` or `index.html`. Keep the HTML, JavaScript, CSS, images, diagrams and media folders together. The learning interface works without a network connection once the package is downloaded.
+
+## About the examples
+
+Labs and mockups are educational simulations. They do not connect to a real Azure tenant, execute real API calls or transmit files. Example code is not a substitute for security review or GxP validation.
+
+## Privacy
+
+This public course contains generalized educational content. It excludes private application materials and personal or employer-specific information.

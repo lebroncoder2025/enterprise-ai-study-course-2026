@@ -1,0 +1,106 @@
+
+/* Enterprise AI Academy — readability, educational data grids, 2026-11-07 */
+.sublesson-body .learning-table-scroll{
+ max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;
+ border:1px solid #486b7d;border-radius:13px;background:#0c2032;
+ margin:20px 0 26px;box-shadow:0 7px 22px #0002;
+ scrollbar-width:thin;scrollbar-color:#83bdb6 #152a3c;
+}
+.sublesson-body .learning-table-scroll>table,
+.lesson .learning-table-scroll>table {
+ display:table!important;table-layout:auto;border-collapse:separate!important;
+ border-spacing:0!important;width:100%!important;min-width:680px;max-width:none!important;
+ margin:0!important;overflow:visible!important;
+}
+.sublesson-body .learning-table-scroll th,
+.sublesson-body .learning-table-scroll td,
+.lesson .learning-table-scroll th,
+.lesson .learning-table-scroll td{
+ border:0!important;border-bottom:1px solid #344f60!important;
+ border-right:1px solid #30495e!important;
+ padding:13px 16px!important;min-width:155px!important;
+ line-height:1.55!important;font-size:14px!important;
+ white-space:normal!important;overflow-wrap:break-word!important;
+ color:#eaf4f8;vertical-align:top;
+}
+.sublesson-body .learning-table-scroll th:last-child,
+.sublesson-body .learning-table-scroll td:last-child{border-right:0!important}
+.sublesson-body .learning-table-scroll thead th,
+.lesson .learning-table-scroll thead th{
+ background:#1b4450!important;color:#d2fff4!important;
+ font-size:13.5px!important;font-weight:800!important;
+ position:sticky;top:0;z-index:1;text-align:left;
+}
+.sublesson-body .learning-table-scroll tbody tr:nth-child(even) td{background:#142e40!important}
+.sublesson-body .learning-table-scroll tbody tr:hover td{background:#214356!important}
+.sublesson-body .learning-table-scroll tbody tr:last-child td{border-bottom:0!important}
+.learning-table-caption{color:#a9c6cf;font-size:12px;margin-top:-14px;margin-bottom:22px}
+.learning-table-scroll:focus-visible{outline:3px solid #f6cd7c;outline-offset:2px}
+.english-vocab{margin:17px 0 23px;padding:16px 18px;border:1px solid #3c6a6a;background:#102f3c;border-radius:13px}
+.english-vocab h3{color:#b6f9ea;font-size:16px!important;margin:0 0 11px!important}
+.english-vocab dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px;margin:0}
+.english-vocab dl>div{background:#102638;border:1px solid #294e5b;border-radius:9px;padding:9px 11px}
+.english-vocab dt{color:#f1fbf8;font-weight:750}
+.english-vocab dd{margin:1px 0 0;color:#9fe4d3;font-size:12.5px}
+.course-master-dive{background:linear-gradient(135deg,#122d40,#0e2335);padding:clamp(17px,2.5vw,26px);
+ border:1px solid #42677a;border-radius:16px;margin:22px 0 32px;line-height:1.76}
+.course-master-dive h2:first-child{margin-top:0!important}
+.course-master-dive h2{color:#defcf6!important}
+.course-master-dive h3{color:#a2ecdc!important}
+.course-master-dive p{max-width:90ch}
+.course-master-dive .step-order{counter-reset:study}
+.course-master-dive .step-order>li{margin:14px 0;padding-left:8px}
+.course-master-dive .concept{border-left:3px solid #78e0ce;padding:9px 15px;background:#19394a;margin:12px 0}
+.course-master-dive .numbers{padding:13px 17px;background:#0b1e30;border:1px solid #325767;border-radius:11px}
+.course-master-dive .numbers code{background:#203b52}
+.course-master-dive .worked-step{padding:12px 16px;background:#102536;border:1px solid #3c5e6e;border-radius:12px;margin:13px 0}
+.course-master-dive strong{color:#f2fbf8}
+.course-master-dive .formula-block{display:block;white-space:normal;text-align:center;font:600 clamp(15px,1.6vw,22px)/1.75 Georgia,serif;
+ background:#0b1b2a;border-radius:10px;padding:16px;overflow-x:auto;border:1px solid #305365}
+.course-master-dive code{white-space:normal;word-break:normal}
+.course-extra-figure{background:#0a1e30;border:1px solid #365b6d;border-radius:14px;padding:14px 16px;margin:21px 0}
+.course-extra-figure h3{margin:0 0 12px!important}
+.course-extra-figure img{max-width:100%;max-height:490px;object-fit:contain;display:block;margin:auto;border-radius:9px}
+.course-extra-figure figcaption{font-size:12px;color:#c2dce3;padding-top:11px;line-height:1.5}
+.course-extra-figure a{overflow-wrap:anywhere}
+.study-video{background:#0c2030;border:1px solid #365d6d;border-radius:15px;padding:19px;margin:23px 0}
+.study-video h3{margin:0 0 8px!important}
+.study-video .player{aspect-ratio:16/9;max-width:860px;background:#071522;border-radius:10px;overflow:hidden;margin:14px 0}
+.study-video iframe{display:block;width:100%;height:100%;border:0}
+.study-video button,.study-film button,.interactive-math button{
+ display:inline-flex;align-items:center;justify-content:center;gap:6px;
+ border:1px solid #549c96;background:#174a50;color:#e6fff6;
+ border-radius:9px;padding:10px 14px;font-weight:700;margin:5px 6px 5px 0;
+}
+.study-video button:hover,.study-film button:hover,.interactive-math button:hover{background:#205f62}
+.study-video a{display:inline-block;word-break:break-all;margin:8px 0}
+.study-film{background:#0d2637;border:1px solid #3b6676;padding:18px;border-radius:15px;margin:24px 0}
+.study-film h3{margin:0 0 10px!important}
+.study-film .frame{padding:16px 18px;border:1px solid #4c7984;border-radius:14px;background:#102f40;min-height:260px}
+.study-film .frame h4{font-size:19px;margin:9px 0}
+.study-film .film-progress{height:8px;border-radius:9px;background:#1a4455;overflow:hidden}
+.study-film .film-progress i{display:block;height:100%;width:0;background:#80e4cd;transition:width .2s}
+.study-film .film-flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:8px;margin:14px 0}
+.study-film .film-stage{background:#0d2334;border:1px solid #2f5361;border-radius:10px;padding:9px 11px;font-size:12px}
+.study-film .film-stage.selected{background:#1d5253;border-color:#92edcb;color:white}
+.study-film .film-demo{font:700 16px/1.55 ui-monospace,Consolas,monospace;color:#c9ffe9;background:#061827;padding:13px;border-radius:9px;margin:13px 0;white-space:pre-wrap}
+.study-film .film-captions{font-size:15.5px;max-width:85ch}
+.study-film .film-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}
+.study-film .film-controls button{margin:0}
+.interactive-math{background:#0c2235;border:1px solid #426778;border-radius:16px;padding:clamp(16px,3vw,24px);margin:24px 0}
+.interactive-math h3{margin:0 0 12px!important}
+.interactive-math .control-row{display:flex;flex-wrap:wrap;gap:14px;align-items:end;margin:15px 0}
+.interactive-math label{display:block;min-width:190px;flex:1}
+.interactive-math label input{display:block;max-width:300px;width:100%;accent-color:#8ce5cb;margin:10px 0}
+.interactive-math .math-output{background:#071a2a;padding:15px;border:1px solid #355a6c;border-radius:12px}
+.interactive-math svg{width:100%;max-width:790px;height:auto;display:block;background:#0c1e2d;border-radius:12px;margin:10px auto}
+.interactive-math .math-result{font-size:15px;color:#dbfff1}
+.interactive-math small{color:#a8ced8}
+.course-note{padding:13px 15px;border-left:3px solid #f6cd7c;background:#342b21;border-radius:0 9px 9px 0;margin:18px 0}
+@media(max-width:700px){
+ .sublesson-body .learning-table-scroll>table,.lesson .learning-table-scroll>table{min-width:690px!important}
+ .sublesson-body .learning-table-scroll td,.sublesson-body .learning-table-scroll th{font-size:13px!important;padding:11px 12px!important}
+ .course-master-dive{margin:15px 0}
+ .study-film .frame{min-height:0}
+ .study-film .film-controls button{flex:1}
+}

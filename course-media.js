@@ -75,5 +75,11 @@ if(landing){
  const a=el("a","","▶ Biblioteka filmów od autorów (PL/EN) — "+count+" materiałów z zadaniami i quizami");
  a.href="#/lekcja/rag-azure/10-azure";p.append(a);landing.append(p);
 }
+// Zachowaj starsze narracje MP4 jako opcjonalne materiały, zamiast wyróżniać je ponad interaktywnym doświadczeniem.
+document.querySelectorAll(".narrated-mp4").forEach(section=>{
+ const folder=el("details","narrated-optional");
+ folder.append(el("summary","","Dodatkowa narracja wideo (opcjonalnie — materiał ilustracyjny)"));
+ section.replaceWith(folder);folder.append(section);
+});
 document.documentElement.dataset.curatedVideoCount=String(count);
 })();

@@ -1,0 +1,5 @@
+URS_ID,Przykładowe wymaganie,Ryzyko,Test_ID,Oczekiwany wynik,Dowód,Status przykładowy
+URS-001,Tylko approver zatwierdza SOP,Nieuprawnione zatwierdzenie,TEST-001,Reader nie może wykonać Approve,Zrzut + audit trail + wynik testu,Do przetestowania
+URS-002,Podpis powiązany z użytkownikiem i wersją,Brak identyfikowalności,TEST-002,"Zapis osoby, czasu i wersji",Audit trail,Do przetestowania
+URS-003,Historyczne wersje SOP są dostępne,Zagubiona historia,TEST-003,Wersja v2 dostępna po v3,Historia i log wersji,Do przetestowania
+URS-004,Dane można odtworzyć,Utrata regulowanych zapisów,TEST-004,Dane i metadane odtworzone,Raport restore,Do przetestowania

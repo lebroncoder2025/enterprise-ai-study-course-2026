@@ -1,0 +1,5 @@
+ID,Proces,Ryzyko,Typ kontroli,Projekt kontroli,Częstotliwość,Przykładowy dowód,Test,Status
+AC-01,ERP finance access,Nieuprawnione księgowanie,ITGC Access,Zatwierdzenie dostępu przed nadaniem,Na wniosek,"Ticket approval, export ról",Sprawdzenie kolejności approval / access,Przykład
+CH-02,ERP change,Nieautoryzowana zmiana raportu,ITGC Change,Test i akceptacja przed deployem,Na zmianę,"Commit ID, test, approval, deploy log",Sprawdzenie zgodności wersji,Przykład
+OP-03,Sales data import,Brakujące rekordy w raportach,ITGC Operations,Monitorowanie błędów i uzgodnienie danych,Codziennie,Job log i rozliczenie wyjątków,Reconciliation 1000 vs 980,Przykład
+APP-04,Invoice posting,Duplikat faktury,ITAC,Blokada duplikatu ID,Każda transakcja,Konfiguracja i test negatywny,Dwie faktury z tym samym ID,Przykład

@@ -1,24 +1,22 @@
 # Enterprise AI Academy — jedna ścieżka nauki
 
-Kompletny, otwarty kurs po polsku, od podstaw AI i Machine Learning, przez LLM, prompty, RAG, fine-tuning, agentów, narzędzia enterprise, Azure i MLOps, aż po GxP oraz SOX.
+10 działów, 52 pełne lekcje, 16 interaktywnych laboratoriów, quiz 144 pytań, lokalne filmy i makiety. Wszystkie materiały dostępne ze strony głównej `index.html`. Obrazy i krótkie animacje działają z GitHub Pages, bez zewnętrznego hotlinkowania.
 
-## Jak zacząć
+## Program
+1. **Fundamenty AI, ML i Data Science** — 6 lekcji.
+2. **LLM, tokeny, transformery i embeddingi** — 3 lekcji.
+3. **Prompt Engineering i zarządzanie kontekstem** — 10 lekcji.
+4. **RAG, Azure AI Search, Foundry i architektura** — 3 lekcji.
+5. **Trening i fine-tuning modeli** — 4 lekcji.
+6. **Agenci, workflow, Copilot Studio i Code Interpreter** — 5 lekcji.
+7. **ChatGPT, Claude, Codex, GitHub Copilot i M365** — 6 lekcji.
+8. **Ewaluacja, MLOps, LLMOps, governance i koszty** — 8 lekcji.
+9. **GxP, SOX i kontrole — niezależnie od AI** — 4 lekcji.
+10. **Projekt końcowy i decyzje architektoniczne** — 3 lekcji.
 
-Otwórz **[stronę kursu](https://lebroncoder2025.github.io/enterprise-ai-study-course-2026/)**. Wszystkie 52 zagadnienia zostały uporządkowane w 10 modułów. Lekcje, quiz (144 pytania), laboratoria i krótkie animacje są dostępne na jednej stronie; nie trzeba wybierać między kilkoma wersjami.
+## Ważne
 
-## Materiały do ćwiczeń
-
-- `cwiczenia_python/`: przykłady gradientu, LoRA, walidacji zbioru SFT, trace/eval i symulacji agentów.
-- `materialy/skrypty_python/`: dodatkowe małe programy edukacyjne.
-- `narzedzia/diagramy/`: lokalne diagramy (SVG) do lekcji.
-- `PODGLAD_SCREENS/`: makiety edukacyjne UI (nie są prawdziwymi zrzutami z firmowych tenantów).
-- `filmy_pl/`: krótkie animacje z polskimi napisami.
-- `SLOWNIK_156.json`: pomocnicza lista 156 terminów.
-
-## Publikacja
-
-Repozytorium publikuje GitHub Pages z gałęzi `main` i katalogu głównego. Strona działa jako statyczny HTML z JavaScript, bez backendu i logowania. Wyniki quizów i postępy zapisują się lokalnie w przeglądarce. Pliki mediów są ścieżkami względnymi, np. `filmy_pl/weights.mp4`, aby działały na adresie projektowym GitHub Pages.
-
-Materiały mają charakter edukacyjny. Dokumentacja producentów, regulacje i warunki korzystania z usług mogą się zmieniać. Przykłady w sekcji compliance nie stanowią porady prawnej.
-
-Starsze publiczne adresy HTML przekierowują do głównego kursu zamiast publikować osobne, konkurencyjne aplikacje.
+- To niezależny projekt edukacyjny. Nie przedstawia rzeczywistych tenantów Microsoft/firm, a makiety są podpisane.
+- Zewnętrzne filmy producentów mogą nie zezwalać na embed; krótkie lokalne filmy działają bez tego ograniczenia.
+- Kod i przykłady są demonstracyjne, nie zastępują walidacji systemów podlegających GxP lub SOX.
+- Archiwalne wersje kursu nie są publikowane w aktualnym drzewie witryny, co usuwa z aktualnej strony duplikaty i stare odniesienia. Historia Git repozytorium pozostaje osobnym zagadnieniem.

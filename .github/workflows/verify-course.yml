@@ -1,0 +1,55 @@
+name: Verify course quality and media
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: JavaScript syntax
+        run: |
+          node --check course-guided.js
+          node --check course-core.js
+          node --check course-ml.js
+          node --check course-enterprise.js
+          node --check course-extra.js
+      - name: Verify HTML, local images and absence of employer references
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          import re
+          root=Path('.')
+          html=(root/'index.html').read_text(encoding='utf-8')
+          assert 'course-guided.js' in html and 'course-guided.css' in html
+          assert not re.search(r'roche|rekrutacj|rozmow.{0,25}(techniczn|rekrutacyjn|liderem)', html, re.I)
+          for fp in ['course-guided.js','course-guided.css','assets/screens/foundry.png','assets/diagrams/enterprise_rag.svg']:
+              assert (root/fp).is_file(),fp
+          for fp in ['guide-ml.mp4','guide-llm.mp4','guide-rag.mp4','guide-finetune.mp4','guide-agents.mp4','guide-mlops.mp4']:
+              f=root/'assets/videos'/fp
+              assert f.is_file() and f.stat().st_size>250000,fp
+          class Check(HTMLParser):
+              def handle_starttag(self,tag,attrs):
+                  if tag not in ('script','link','img','source','video'):return
+                  a=dict(attrs)
+                  for prop in ('src','href'):
+                      v=a.get(prop,'')
+                      if not v or v.startswith(('https://','http://','data:','#','mailto:','javascript:')):continue
+                      if v.startswith('/'):continue
+                      path=v.split('?',1)[0].split('#',1)[0]
+                      if re.search(r'\\.(?:html|css|js|png|jpg|webp|svg|mp4)$',path):
+                          assert (root/path).exists(),(tag,path)
+          Check().feed(html)
+          print('HTML and media checks passed')
+          PY
+      - name: Verify narrated MP4 contain audio
+        run: |
+          for video in assets/videos/guide-*.mp4; do
+            ffprobe -v error -select_streams a -show_entries stream=codec_type -of csv=p=0 "$video" | grep -q audio
+            ffprobe -v error -select_streams v -show_entries stream=codec_type -of csv=p=0 "$video" | grep -q video
+          done

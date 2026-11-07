@@ -14,6 +14,8 @@ jobs:
       - name: JavaScript syntax
         run: |
           node --check course-guided.js
+          node --check course-terms.js
+          node --check course-explanations.js
           node --check course-core.js
           node --check course-ml.js
           node --check course-enterprise.js
@@ -28,7 +30,7 @@ jobs:
           html=(root/'index.html').read_text(encoding='utf-8')
           assert 'course-guided.js' in html and 'course-guided.css' in html
           assert not re.search(r'roche|rekrutacj|rozmow.{0,25}(techniczn|rekrutacyjn|liderem)', html, re.I)
-          for fp in ['course-guided.js','course-guided.css','assets/screens/foundry.png','assets/diagrams/enterprise_rag.svg']:
+          for fp in ['course-guided.js','course-guided.css','course-terms.js','course-terms.css','course-explanations.js','course-explanations.css','assets/screens/foundry.png','assets/diagrams/enterprise_rag.svg']:
               assert (root/fp).is_file(),fp
           for fp in ['guide-ml.mp4','guide-llm.mp4','guide-rag.mp4','guide-finetune.mp4','guide-agents.mp4','guide-mlops.mp4']:
               f=root/'assets/videos'/fp

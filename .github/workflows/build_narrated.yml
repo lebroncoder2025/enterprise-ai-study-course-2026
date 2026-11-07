@@ -1,4 +1,4 @@
-name: Build narrated course animations
+name: Build natural narrated course animations
 on:
   push:
     paths:
@@ -8,22 +8,43 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: narrated-videos
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
-      - name: Prepare text-to-speech and video encoder
+        with:
+          persist-credentials: true
+      - name: Install video encoder and neural Polish TTS
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq espeak ffmpeg fonts-dejavu-core
-          python -m pip install --quiet pillow
-      - name: Render six bilingual narrated lessons
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --quiet --upgrade pillow edge-tts gTTS
+      - name: Generate natural narrated videos
+        env:
+          COURSE_NEURAL_VOICE: pl-PL-MarekNeural
         run: python scripts/build_narrated.py
-      - name: Save generated videos on main
+      - name: Validate audio and video tracks
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          videos=sorted(Path('assets/videos').glob('guide-*.mp4'))
+          assert len(videos)==6, 'Expected six guided chapters'
+          for v in videos:
+              d=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(v)]))
+              assert any(s['codec_type']=='audio' for s in d['streams']), f'Missing audio: {v}'
+              assert any(s['codec_type']=='video' for s in d['streams']), f'Missing video: {v}'
+              assert float(d['format']['duration'])>25, f'Unexpected duration: {v}'
+              print(v,round(float(d['format']['duration']),1),'sec',v.stat().st_size,'bytes')
+          PY
+      - name: Publish six refreshed natural-voice lessons
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/videos/guide-*.mp4
-          git diff --cached --quiet || (git commit -m "Publish narrated educational animations" && git push origin HEAD:main)
+          git diff --cached --quiet || (git commit -m "Upgrade Polish narration to neural voice" && git push origin HEAD:main)

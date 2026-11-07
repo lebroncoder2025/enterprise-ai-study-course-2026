@@ -20,3 +20,7 @@
 - Zewnętrzne filmy producentów mogą nie zezwalać na embed; krótkie lokalne filmy działają bez tego ograniczenia.
 - Kod i przykłady są demonstracyjne, nie zastępują walidacji systemów podlegających GxP lub SOX.
 - Archiwalne wersje kursu nie są publikowane w aktualnym drzewie witryny, co usuwa z aktualnej strony duplikaty i stare odniesienia. Historia Git repozytorium pozostaje osobnym zagadnieniem.
+
+## Pojęcia PL/EN i naturalny lektor
+
+Kurs objaśnia terminy w akapitach i diagramach (np. `logits` = surowe oceny tokenów; `softmax` = rozkład prawdopodobieństwa). W częściach LLM i ML znajdują się również rozpisane przykłady rachunkowe. Krótkie wideo `assets/videos/guide-*.mp4` jest generowane w GitHub Actions polskim głosem neuronowym `pl-PL-MarekNeural` (awaryjnie gTTS). Wideo działa offline po pobraniu; generowanie wymaga dostępu do zewnętrznej usługi TTS, dlatego pozostaje wyraźnie oddzielone od wyświetlania kursu. Brak powodzenia generacji nie uruchamia mechanicznego lektora eSpeak.

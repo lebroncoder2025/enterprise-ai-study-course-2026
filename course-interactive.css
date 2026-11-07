@@ -75,3 +75,7 @@
  .rag-move button{flex:1}
 }
 @media(prefers-reduced-motion:reduce){.rag-simulator *,.curated-video-library *{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+.narrated-optional{margin:1.3rem 0;border:1px dashed #476a79;border-radius:12px;padding:.7rem .95rem;background:#102537}
+.narrated-optional>summary{cursor:pointer;color:#bddfe0;font-weight:650}
+.narrated-optional[open] .narrated-mp4{margin-top:.85rem}

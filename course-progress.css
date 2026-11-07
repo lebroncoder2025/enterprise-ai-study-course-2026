@@ -1,0 +1,10 @@
+﻿#course-progress{max-width:760px}
+.progress-tools{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:14px}
+.progress-tools .button{min-height:44px}
+#progress-transfer-status{flex:1 1 100%;min-height:1.5em;color:#a9e6d7;font-size:12px}
+.study-guide{max-width:900px;margin:24px 0;padding:20px 24px;border:1px solid #3b6578;border-radius:15px;background:#12283c}
+.study-guide h2{margin:0 0 10px;font-size:20px}
+.study-guide ol{padding-left:22px;margin:8px 0}
+.study-guide li{margin:7px 0;color:#d2e2ed;line-height:1.6}
+.study-guide p{margin:10px 0 0;color:#b7cedb;font-size:13px}
+@media(max-width:600px){.progress-tools{align-items:stretch}.progress-tools .button{flex:1 1 100%}.study-guide{padding:17px 16px;margin:18px 0}}

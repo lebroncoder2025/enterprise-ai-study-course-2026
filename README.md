@@ -2,6 +2,10 @@
 
 10 działów, 52 pełne lekcje, 16 interaktywnych laboratoriów, quiz 144 pytań, lokalne filmy i makiety. Wszystkie materiały dostępne ze strony głównej `index.html`. Obrazy i krótkie animacje działają z GitHub Pages, bez zewnętrznego hotlinkowania.
 
+## Jak przenie?? post?p mi?dzy urz?dzeniami
+
+Post?p, odpowiedzi i notatki s? przechowywane lokalnie w przegl?darce. Na stronie startowej wybierz **Eksportuj post?p**, przenie? pobrany plik JSON na drugie urz?dzenie i wybierz **Importuj post?p**. Import scala uko?czone lekcje; nic nie jest wysy?ane na serwer.
+
 ## Program
 1. **Fundamenty AI, ML i Data Science** — 6 lekcji.
 2. **LLM, tokeny, transformery i embeddingi** — 3 lekcji.

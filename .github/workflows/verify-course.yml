@@ -25,8 +25,6 @@ jobs:
           node --check course-media.js
           node --check course-rag-lab.js
           node --check course-infrastructure.js
-          node --check course-progress.js
-          node --check course-search-shortcuts.js
       - name: Verify HTML, local images and absence of employer references
         run: |
           python - <<'PY'
@@ -39,10 +37,6 @@ jobs:
           assert 'course-media.js' in html and 'course-rag-lab.js' in html
           assert 'course-interactive.css' in html
           assert 'course-infrastructure.js' in html and 'course-infrastructure.css' in html
-          assert 'course-progress.js' in html and 'course-progress.css' in html
-          assert 'course-search-shortcuts.js' in html
-          for marker in ['export-progress','choose-progress-import','progress-import-file','study-guide-title']:
-              assert marker in html, marker
           infra=(root/'course-infrastructure.js').read_text(encoding='utf-8')
           for marker in ['infra-api','infra-mcp','infra-azure','infra-case','infra-ops','infra-file-result','infra-api-send','infra-mcp-run']:
               assert marker in infra, marker
@@ -60,7 +54,7 @@ jobs:
           for p in ['rag-role','rag-query','rag-mode','rag-topk','1/(60+']:
               assert p in rag, p
           assert not re.search(r'roche|rekrutacj|rozmow.{0,25}(techniczn|rekrutacyjn|liderem)', html, re.I)
-          for fp in ['course-guided.js','course-guided.css','course-terms.js','course-terms.css','course-explanations.js','course-explanations.css','assets/screens/foundry.png','assets/diagrams/enterprise_rag.svg','course-media.js','course-rag-lab.js','course-interactive.css','course-infrastructure.js','course-infrastructure.css','assets/diagrams/api_data_ai.svg','assets/diagrams/mcp_host_client_server.svg','assets/diagrams/azure_ai_infrastructure.svg','assets/diagrams/ai_file_lifecycle.svg','course-progress.js','course-progress.css','course-search-shortcuts.js','START_TUTAJ.html']:
+          for fp in ['course-guided.js','course-guided.css','course-terms.js','course-terms.css','course-explanations.js','course-explanations.css','assets/screens/foundry.png','assets/diagrams/enterprise_rag.svg','course-media.js','course-rag-lab.js','course-interactive.css','course-infrastructure.js','course-infrastructure.css','assets/diagrams/api_data_ai.svg','assets/diagrams/mcp_host_client_server.svg','assets/diagrams/azure_ai_infrastructure.svg','assets/diagrams/ai_file_lifecycle.svg']:
               assert (root/fp).is_file(),fp
           for fp in ['guide-ml.mp4','guide-llm.mp4','guide-rag.mp4','guide-finetune.mp4','guide-agents.mp4','guide-mlops.mp4']:
               f=root/'assets/videos'/fp

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 445" role="img"><title>Jak optymalizator zmienia wagę</title>
+<rect width="1220" height="445" fill="#0c1d30"/>
+<text x="34" y="48" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#e7f6fc">Jak optymalizator zmienia wagę</text>
+<text x="34" y="76" font-family="Arial,sans-serif" font-size="15" fill="#a9c2d0">Przykład: x = 2, y = 6, w = 1, η = 0.1</text>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8adccb"/></marker></defs>
+<rect x="30" y="145" width="205" height="120" rx="14" fill="#18364a" stroke="#517588" stroke-width="1.5"/>
+<text x="132.5" y="193.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">Dane</text>
+<text x="132.5" y="217.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">x=2; y=6</text>
+<rect x="275" y="145" width="205" height="120" rx="14" fill="#18364a" stroke="#517588" stroke-width="1.5"/>
+<text x="377.5" y="193.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">Forward</text>
+<text x="377.5" y="217.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">ŷ = 1×2 = 2</text>
+<rect x="520" y="145" width="205" height="120" rx="14" fill="#18364a" stroke="#517588" stroke-width="1.5"/>
+<text x="622.5" y="193.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">Loss</text>
+<text x="622.5" y="217.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">(2−6)² = 16</text>
+<rect x="765" y="145" width="205" height="120" rx="14" fill="#18364a" stroke="#517588" stroke-width="1.5"/>
+<text x="867.5" y="193.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">Gradient</text>
+<text x="867.5" y="217.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">dL/dw = −16</text>
+<rect x="1010" y="145" width="175" height="120" rx="14" fill="#18364a" stroke="#517588" stroke-width="1.5"/>
+<text x="1097.5" y="193.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">Update</text>
+<text x="1097.5" y="217.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">w = 2.6</text>
+<rect x="405" y="330" width="400" height="74" rx="14" fill="#1c5349" stroke="#517588" stroke-width="1.5"/>
+<text x="605.0" y="355.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">Nowa predykcja: 5.2</text>
+<text x="605.0" y="379.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">Nowy loss: 0.64</text>
+<line x1="235" y1="205" x2="273" y2="205" stroke="#78e9ce" stroke-width="2.3" marker-end="url(#arr)"/>
+<line x1="480" y1="205" x2="518" y2="205" stroke="#78e9ce" stroke-width="2.3" marker-end="url(#arr)"/>
+<line x1="725" y1="205" x2="763" y2="205" stroke="#78e9ce" stroke-width="2.3" marker-end="url(#arr)"/>
+<line x1="970" y1="205" x2="1008" y2="205" stroke="#78e9ce" stroke-width="2.3" marker-end="url(#arr)"/>
+<line x1="1092" y1="265" x2="805" y2="367" stroke="#78e9ce" stroke-width="2.3" marker-end="url(#arr)"/>
+<text x="948.5" y="307.0" text-anchor="middle" font-size="12" font-family="Arial,sans-serif" fill="#f3cf8b">mniejszy błąd</text>
+<text x="1194" y="423" text-anchor="end" font-family="Arial,sans-serif" font-size="12" fill="#a9c2d0">SCHEMAT EDUKACYJNY · NIE JEST SCREENSHOTEM PRODUCENTA</text></svg>

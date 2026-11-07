@@ -285,7 +285,7 @@ window.VIDEO_COURSE={
       "lesson": "llm",
       "start": 0,
       "level": "rozszerzenie",
-      "focus": "Gdzie wiedza może być zakodowana w parametrach i dlaczego nie ma jednego the learnerordu „Warszawa”?",
+      "focus": "Gdzie wiedza może być zakodowana w parametrach i dlaczego nie ma jednego rekordu „Warszawa”?",
       "watch": "06:07 MLP; 17:04 superposition; pamiętaj, że ilustracja jest modelem uproszczonym.",
       "task": "Wyjaśnij zdanie „wiedza jest rozproszona w wagach”.",
       "quiz": {
@@ -296,7 +296,7 @@ window.VIDEO_COURSE={
           "Tylko w internecie"
         ],
         "ok": 1,
-        "why": "Rozproszone reprezentacje mogą kodować skojarzenia; nie muszą istnieć the learnerordy faktów."
+        "why": "Rozproszone reprezentacje mogą kodować skojarzenia; nie muszą istnieć rekordy faktów."
       },
       "lab": "tokens",
       "url": "https://www.youtube.com/watch?v=9-Jl0dxWQs8"
@@ -643,7 +643,7 @@ window.VIDEO_COURSE={
     },
     {
       "id": "interview",
-      "title": "Architektura AI w pharmaceutical organization",
+      "title": "Architektura AI w enterprise environment",
       "why": "Skupia się na RAG, Azure Search, agentach, jakości i wyborze technologii.",
       "items": [
         "transformer",

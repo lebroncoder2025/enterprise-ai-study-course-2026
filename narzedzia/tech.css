@@ -1,0 +1,13 @@
+
+.techdiagram{border:1px solid #36586e;background:#0c1d30;border-radius:17px;margin:24px 0;overflow:hidden}
+.techdiagram img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+.techdiagram figcaption{padding:12px 16px;color:#aac5d4;font-size:12px;background:#142b40}
+#lab-gradient input[type=range]{width:100%;accent-color:#78e9ce}
+#view-labs .panel{scroll-margin-top:20px}
+#view-labs .panel > p{line-height:1.75;color:#c8dbe6}
+#view-labs .output{white-space:pre-wrap;word-break:normal}
+.video-troubleshooting{border:1px solid #53788c;background:#14354b;padding:15px 18px;border-radius:13px;color:#d3ebf5;margin:13px 0}
+.video-troubleshooting a{color:#91eddd}
+@media(max-width:730px){.techdiagram{margin:16px 0}.techdiagram figcaption{font-size:11px}}
+
+.teaching-diagram{display:block;width:100%;height:auto;max-width:980px;background:#0d1f30;border:1px solid #31536a;border-radius:16px;margin:22px 0}.dimmed{opacity:.55}

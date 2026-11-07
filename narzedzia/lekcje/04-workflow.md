@@ -20,7 +20,7 @@
 
 ## Typ C: generative orchestration — model planuje w ramach dostępnych narzędzi
 
-**Przykład:** „Znajdź przyczynę opóźnień w zatwierdzaniu dokumentów i przygotuj podsumowanie”. Orkiestrator może wybrać: wyszukaj dokumentację → sprawdź the learnerordy w SQL → oblicz trendy → zredaguj raport. Kolejność zależy od pytania, wyników i opisów narzędzi. Zbiór dostępnych tooli, scopes oraz polityki pozostają jednak zdefiniowane przez twórcę systemu.
+**Przykład:** „Znajdź przyczynę opóźnień w zatwierdzaniu dokumentów i przygotuj podsumowanie”. Orkiestrator może wybrać: wyszukaj dokumentację → sprawdź rekordy w SQL → oblicz trendy → zredaguj raport. Kolejność zależy od pytania, wyników i opisów narzędzi. Zbiór dostępnych tooli, scopes oraz polityki pozostają jednak zdefiniowane przez twórcę systemu.
 
 ## Typ D: autonomia zdarzeniowa (event-driven agent)
 

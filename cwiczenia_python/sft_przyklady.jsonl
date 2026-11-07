@@ -1,0 +1,2 @@
+{"messages": [{"role": "user", "content": "Podaj kategorię: cieknąca pompa"}, {"role": "assistant", "content": "{\"category\":\"mechanical_issue\"}"}]}
+{"messages": [{"role": "user", "content": "Podaj kategorię: błąd autoryzacji konta"}, {"role": "assistant", "content": "{\"category\":\"access_issue\"}"}]}

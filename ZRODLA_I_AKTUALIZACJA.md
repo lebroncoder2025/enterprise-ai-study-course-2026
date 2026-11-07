@@ -1,8 +1,8 @@
 # Pochodzenie materiału i granice aktualności
 
-**Stan źródeł:** 6 listopada 2026. Kurs jest niezależnym materiałem edukacyjnym; nie jest dokumentacją pharmaceutical organization, pharmaceutical company ani materiałem firm Microsoft/OpenAI/Anthropic/GitHub.
+**Stan źródeł:** 6 listopada 2026. Kurs jest niezależnym materiałem edukacyjnym; nie jest dokumentacją enterprise environment, organization ani materiałem firm Microsoft/OpenAI/Anthropic/GitHub.
 
-**Bazą kursu** jest wcześniejsza paczka AI SPRINT PL/EN oraz dostarczone materiały the learnerrutacyjne pharmaceutical organization. Rozbudowa o narzędzia stanowi osobne opracowanie na podstawie publicznej dokumentacji producentów.
+**Bazą kursu** jest wcześniejsza paczka AI SPRINT PL/EN oraz dostarczone materiały rekrutacyjne enterprise environment. Rozbudowa o narzędzia stanowi osobne opracowanie na podstawie publicznej dokumentacji producentów.
 
 ## Oficjalne źródła
 
@@ -32,7 +32,7 @@
 - Microsoft VS Code instructions: https://code.visualstudio.com/assets/learn/customizations/ep-2-1-cust-ui.png
 - ChatGPT Projects: patrz lekcja 08 — link w oficjalnej stronie Help Center.
 
-**Zrzuty są osadzane jako zewnętrzne odnośniki** do oryginalnych domen. Z uwagi na brak zgody na rozpowszechnianie prywatnych interfejsów firmowych, paczka nie zawiera screenshotów wewnętrznych środowisk pharmaceutical organization/pharmaceutical company. Są wyłącznie autentyczne zasoby publicznej dokumentacji, odpowiednio podpisane. Jeśli oficjalny URL się zmieni, link może przestać działać, ale pozostały kurs będzie funkcjonalny offline.
+**Zrzuty są osadzane jako zewnętrzne odnośniki** do oryginalnych domen. Z uwagi na brak zgody na rozpowszechnianie prywatnych interfejsów firmowych, paczka nie zawiera screenshotów wewnętrznych środowisk enterprise environment/organization. Są wyłącznie autentyczne zasoby publicznej dokumentacji, odpowiednio podpisane. Jeśli oficjalny URL się zmieni, link może przestać działać, ale pozostały kurs będzie funkcjonalny offline.
 
 ## Wersje interfejsów
 

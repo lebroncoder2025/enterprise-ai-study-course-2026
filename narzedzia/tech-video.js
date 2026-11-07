@@ -1,0 +1,6 @@
+(()=>{'use strict';const active={};
+function load(id,yt,start,end,domain){const el=document.getElementById('tecv-'+id);if(!el)return;
+const f=document.createElement('iframe');f.title='Film edukacyjny — '+id;f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';f.allowFullscreen=true;f.loading='lazy';f.referrerPolicy='strict-origin-when-cross-origin';f.style='width:100%;aspect-ratio:16/9;border:0;border-radius:11px';
+f.src='https://www.'+domain+'/embed/'+yt+'?start='+start+'&end='+end+'&rel=0&playsinline=1&cc_load_policy=1';el.replaceChildren(f);active[id]=domain;}
+document.addEventListener('click',e=>{let b=e.target.closest('[data-tech-video]');if(b){load(b.dataset.techVideo,b.dataset.id,b.dataset.start,b.dataset.end,'youtube.com');return;}b=e.target.closest('[data-tech-alternate]');if(b){const id=b.dataset.techAlternate;load(id,b.dataset.id,b.dataset.start,b.dataset.end,active[id]==='youtube.com'?'youtube-nocookie.com':'youtube.com');return;}});
+})();

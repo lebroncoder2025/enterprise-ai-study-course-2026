@@ -1,6 +1,6 @@
 # 02 · Microsoft Copilot Studio — od pustego projektu do działającego agenta
 
-> **Cel laboratorium:** stworzyć agenta „Quality Knowledge Assistant”, który odpowiada na pytania z *zatwierdzonych* dokumentów, przyznaje się do braku danych i może wystawić zgłoszenie **dopiero po zatwierdzeniu przez człowieka**. Przykład jest szkoleniowy, nie jest procedurą pharmaceutical organization ani pharmaceutical company.
+> **Cel laboratorium:** stworzyć agenta „Quality Knowledge Assistant”, który odpowiada na pytania z *zatwierdzonych* dokumentów, przyznaje się do braku danych i może wystawić zgłoszenie **dopiero po zatwierdzeniu przez człowieka**. Przykład jest szkoleniowy, nie jest procedurą enterprise environment ani organization.
 
 ## Najpierw wybierz odpowiedni typ rozwiązania
 

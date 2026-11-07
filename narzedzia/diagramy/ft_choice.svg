@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 455" role="img"><title>Trzy niezależne decyzje w fine-tuningu</title>
+<rect width="1220" height="455" fill="#0c1d30"/>
+<text x="34" y="48" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#e7f6fc">Trzy niezależne decyzje w fine-tuningu</text>
+<text x="34" y="76" font-family="Arial,sans-serif" font-size="15" fill="#a9c2d0">Metoda ≠ sposób aktualizacji parametrów ≠ sprzęt</text>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8adccb"/></marker></defs>
+<rect x="45" y="126" width="320" height="105" rx="14" fill="#18364a" stroke="#517588" stroke-width="1.5"/>
+<text x="205.0" y="166.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">1. SYGNAŁ TRENINGOWY</text>
+<text x="205.0" y="190.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">SFT · DPO · RFT · dalszy pretraining</text>
+<rect x="449" y="126" width="320" height="105" rx="14" fill="#18364a" stroke="#517588" stroke-width="1.5"/>
+<text x="609.0" y="166.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">2. KTÓRE WAGI ZMIENIAMY?</text>
+<text x="609.0" y="190.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">Full FT · LoRA · QLoRA · PEFT</text>
+<rect x="850" y="126" width="320" height="105" rx="14" fill="#18364a" stroke="#517588" stroke-width="1.5"/>
+<text x="1010.0" y="166.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">3. GDZIE TRENUJEMY?</text>
+<text x="1010.0" y="190.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">CPU/RAM · GPU/VRAM · usługa managed</text>
+<rect x="200" y="307" width="850" height="105" rx="14" fill="#423823" stroke="#517588" stroke-width="1.5"/>
+<text x="625.0" y="347.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e7f6fc">RAG / tekstowy system prompt / kwantyzacja inferencji ≠ fine-tuning</text>
+<text x="625.0" y="371.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#a9c2d0">Nie zmieniają automatycznie parametrów modelu</text>
+<line x1="365" y1="178" x2="447" y2="178" stroke="#78e9ce" stroke-width="2.3" marker-end="url(#arr)"/>
+<text x="406.0" y="169.0" text-anchor="middle" font-size="12" font-family="Arial,sans-serif" fill="#f3cf8b">połączenie</text>
+<line x1="769" y1="178" x2="847" y2="178" stroke="#78e9ce" stroke-width="2.3" marker-end="url(#arr)"/>
+<text x="808.0" y="169.0" text-anchor="middle" font-size="12" font-family="Arial,sans-serif" fill="#f3cf8b">implementacja</text>
+<line x1="610" y1="231" x2="610" y2="305" stroke="#78e9ce" stroke-width="2.3" marker-end="url(#arr)"/>
+<text x="610.0" y="259.0" text-anchor="middle" font-size="12" font-family="Arial,sans-serif" fill="#f3cf8b">alternatywy</text>
+<text x="1194" y="433" text-anchor="end" font-family="Arial,sans-serif" font-size="12" fill="#a9c2d0">SCHEMAT EDUKACYJNY · NIE JEST SCREENSHOTEM PRODUCENTA</text></svg>

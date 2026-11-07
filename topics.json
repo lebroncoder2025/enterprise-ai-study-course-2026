@@ -19,7 +19,7 @@
         "text": "fit(X, y) oznacza dopasowanie modelu do danych z poprawnymi odpowiedziami. predict(X_new) oznacza zastosowanie wyuczonych parametrów do nowego przypadku. Podczas zwykłego predict nie zmieniamy samoczynnie parametrów — najpierw trenujemy, potem używamy."
       },
       {
-        "head": "Przykład pharmaceutical organization",
+        "head": "Przykład enterprise environment",
         "text": "Zgłoszenie ma wiek urządzenia 5 lat i 2 poprzednie awarie. Model może z tych cech oszacować ryzyko awarii. Nie trzeba do tego LLM ani chatbota; często prosty model tabelaryczny jest bardziej kontrolowalny i tańszy."
       }
     ],
@@ -96,7 +96,7 @@
       },
       {
         "head": "Unsupervised learning",
-        "text": "Nie masz etykiet y. K-means grupuje podobne the learnerordy w klastry, PCA pomaga znaleźć mniejszą liczbę wymiarów. Nie oznacza to automatycznie, że skupienia są „prawdziwymi” kategoriami biznesowymi — trzeba je interpretować."
+        "text": "Nie masz etykiet y. K-means grupuje podobne rekordy w klastry, PCA pomaga znaleźć mniejszą liczbę wymiarów. Nie oznacza to automatycznie, że skupienia są „prawdziwymi” kategoriami biznesowymi — trzeba je interpretować."
       },
       {
         "head": "Reinforcement learning",
@@ -489,7 +489,7 @@
     "title": "7. RAG krok po kroku — od PDF do odpowiedzi",
     "tag": "RAG · 13 MIN",
     "blurb": "RAG to nie model ani baza wektorowa. To proces: znajdź właściwy fragment, podaj go LLM, sprawdź odpowiedź.",
-    "explain": "Pomyśl o asystencie w pharmaceutical organization. Dostaje pytanie o aktualny dokument SOP. Najpierw wyszukuje obowiązującą wersję, potem cytuje fragment i wyjaśnia go zwykłym językiem. Model nie musi trenować się ponownie przy każdej aktualizacji procedury.",
+    "explain": "Pomyśl o asystencie w enterprise environment. Dostaje pytanie o aktualny dokument SOP. Najpierw wyszukuje obowiązującą wersję, potem cytuje fragment i wyjaśnia go zwykłym językiem. Model nie musi trenować się ponownie przy każdej aktualizacji procedury.",
     "blocks": [
       {
         "head": "Etap offline: przygotowanie indeksu",

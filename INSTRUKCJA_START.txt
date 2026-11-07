@@ -30,11 +30,11 @@ CO ROBIĆ, JEŚLI NIE MASZ CZASU?
 - Pełny kurs: 12 lekcji + egzamin + laboratoria.
 
 DOŁĄCZONE MATERIAŁY
-- 35-stronicowy podręcznik i zachowana oferta pharmaceutical organization w /materialy.
+- 35-stronicowy podręcznik i zachowana oferta enterprise environment w /materialy.
 - /zaawansowany/START_TUTAJ.html — wcześniejsze laboratoria, m.in.
   gradient descent, BM25, softmax, ewaluacja, diagramy architektury.
 - Wyniki quizów i notatki pozostają lokalnie w tej przeglądarce.
 - Źródła i ograniczenia są opisane w sekcji „Źródła”.
 
-To NIE jest oficjalny kurs pharmaceutical organization. Symulacje nie reprezentują rzeczywistego
+To NIE jest oficjalny kurs enterprise environment. Symulacje nie reprezentują rzeczywistego
 modelu GPT ani produkcyjnych rozwiązań firmy; przykłady są edukacyjne.

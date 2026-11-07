@@ -12,7 +12,7 @@
 
 ## Claude.ai — podobny cel, osobna implementacja
 
-**Projekty Claude** organizują czaty, pliki i instrukcje. W projekcie znajdziesz **Project Knowledge** (dokumenty) i **Set project instructions** (trwałe zachowanie). Możesz nadać zadanie: „Wszystkie odpowiedzi o wymaganiach oddzielaj od the learneromendacji; cytuj źródła”. Wiedza projektu nie jest automatycznie wspólną historią wszystkich oddzielnych czatów — mechanizmy pamięci i projektów mogą działać inaczej niż załączniki.
+**Projekty Claude** organizują czaty, pliki i instrukcje. W projekcie znajdziesz **Project Knowledge** (dokumenty) i **Set project instructions** (trwałe zachowanie). Możesz nadać zadanie: „Wszystkie odpowiedzi o wymaganiach oddzielaj od rekomendacji; cytuj źródła”. Wiedza projektu nie jest automatycznie wspólną historią wszystkich oddzielnych czatów — mechanizmy pamięci i projektów mogą działać inaczej niż załączniki.
 
 **Claude.ai ≠ Claude Code:** przeglądarkowy chat nie powinien być automatycznie traktowany jak agent, który potrafi wykonać operacje na lokalnym repozytorium. Claude Code jest do tego wyspecjalizowaną powierzchnią, posiadającą własne pliki `CLAUDE.md` i uprawnienia.
 
@@ -38,7 +38,7 @@ Nawet jeśli bazowy model jest podobny, **harness**, instrukcje, temperatura/ust
 
 ## Ćwiczenie: jeden cel, trzy konfiguracje
 
-**Cel:** odpowiedzi o architekturze internal process assistant wyłącznie z dokumentacji projektu.
+**Cel:** odpowiedzi o architekturze sample LLM assistant wyłącznie z dokumentacji projektu.
 
 - **ChatGPT Project:** instrukcja projektu + dozwolone pliki jako źródła.
 - **Claude Project:** Project Knowledge + Set project instructions.

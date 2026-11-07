@@ -1,0 +1,18 @@
+
+.explain-path{border:1px solid #457d87;border-radius:17px;background:linear-gradient(130deg,#112c3c,#0a1c30);padding:23px;margin:22px 0 30px;color:#f0f8fc}
+.explain-path h2{margin:0;font-size:clamp(20px,2.5vw,27px);color:#e8f9ff}.path-subtitle{color:#bbd5de;font-size:14px}
+.path-line{display:flex;overflow-x:auto;gap:8px;align-items:stretch;padding:15px 0 20px;scrollbar-width:thin}
+.path-node{min-width:137px;max-width:220px;flex:1 0 137px;text-align:left;background:#122a3d;color:#e7f4ff;border:1px solid #406b7a;border-radius:12px;padding:13px;cursor:pointer}
+.path-node.active{background:#215257;border:2px solid #7fe6d5}.path-node strong{display:block;font-size:15px}.path-node small{display:block;margin-top:5px;font-size:12px;color:#b9d5e4}
+.path-arrow{font-size:26px;color:#76ddcd;align-self:center;font-weight:800}
+.path-description{border-radius:12px;background:#0a2234;border:1px solid #345769;padding:16px}.path-description h3{color:#83ead7;margin:0 0 12px;font-size:21px}
+.path-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.path-info{border-radius:10px;background:#173449;padding:13px;overflow-wrap:anywhere}
+.path-info b{color:#ffd58f;font-size:12px}.path-info p{margin:7px 0 0;color:#edf8ff;font-size:14px;line-height:1.55}
+.path-example{margin:14px 0 0;padding:11px 13px;border-left:3px solid #88ead9;background:#183f47;border-radius:7px;font-size:14px}
+.path-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}.path-actions button{border:1px solid #4a8190;border-radius:9px;background:#15374a;color:#f1faff;padding:9px 13px;cursor:pointer}
+.path-actions button:focus-visible,.path-node:focus-visible{outline:3px solid #fbd68d;outline-offset:3px}.old-clip-folder{margin:14px 0;padding:12px;border:1px solid #42697a;border-radius:12px;background:#10293e}.old-clip-folder summary{cursor:pointer;color:#bcd8e4}
+@media(max-width:700px){.explain-path{padding:14px}.path-grid{grid-template-columns:1fr}.path-node{min-width:151px}}
+
+.narrated-mp4{margin:16px 0 26px;padding:19px 22px;border:1px solid #396d7e;border-radius:16px;background:linear-gradient(135deg,#112b3b,#091b2b);color:#ecf8ff}
+.narrated-mp4 h2{font-size:21px;color:#8ce8d6;margin:0 0 9px}.narrated-mp4 p{font-size:13px;color:#c2d9e5}
+.narrated-mp4 video{display:block;width:100%;max-width:960px;aspect-ratio:16/9;margin:12px auto 0;background:#061524;border:1px solid #47788a;border-radius:12px}

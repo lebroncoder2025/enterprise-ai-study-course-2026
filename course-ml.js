@@ -18,7 +18,7 @@ insert("30-ai-genai",`
 <li><strong>Unsupervised ML:</strong> Grupowanie (clustering) znajduje podobne zachowania klientów w zbiorze bez gotowych etykiet grup.</li>
 <li><strong>GenAI + RAG:</strong> Aplikacja najpierw pobiera właściwą procedurę z kontrolowanego repozytorium, następnie LLM tworzy odpowiedź i cytuje fragment. Dokumenty w RAG nie zmieniają wag modelu.</li>
 </ol>
-<p class="course-note">Na rozmowie technicznej najpierw nazwij <strong>problem i oczekiwany wynik</strong>, dopiero potem dobierz model. Jeśli potrzeba tylko progu 10 000 zł, koszt i ryzyko agenta LLM nie mają uzasadnienia.</p>
+<p class="course-note">W praktyce najpierw nazwij <strong>problem i oczekiwany wynik</strong>, dopiero potem dobierz model. Jeśli potrzeba tylko progu 10 000 zł, koszt i ryzyko agenta LLM nie mają uzasadnienia.</p>
 </section>`);
 insert("31-rodzaje-ml",`
 <section class="course-master-dive">

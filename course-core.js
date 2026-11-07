@@ -20,7 +20,7 @@ for(const node of roots){
  const parent=node.closest(".course-module"),type=parent?.id||"";
  const words=vocabByModule[type]||fallback;
  const vocab=document.createElement("aside");vocab.className="english-vocab";
- vocab.innerHTML="<h3>Mini-słownik PL → EN · słowa do użycia na rozmowie</h3>";
+ vocab.innerHTML="<h3>Mini-słownik PL → EN · praktyczne słownictwo techniczne</h3>";
  const dl=document.createElement("dl");
  for(const [pl,en] of words.slice(0,10)){const item=document.createElement("div");const dt=document.createElement("dt");dt.textContent=pl;const dd=document.createElement("dd");dd.textContent=en;item.append(dt,dd);dl.appendChild(item)}
  vocab.appendChild(dl);

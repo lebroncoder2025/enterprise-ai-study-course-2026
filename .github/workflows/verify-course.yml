@@ -43,7 +43,7 @@ jobs:
           assert 'course-clean-flow.js' in html
           clean=(root/'course-clean-flow.js').read_text(encoding='utf-8')
           assert 'courseCleanFlow' in clean and 'deep-learning' in clean
-          assert 'youtube-nocookie.com/embed/zRGKSy_UhFc' in refresh
+          assert 'youtube-nocookie.com/embed/zRGKSy_UhFc' in (root/'course-rag-refresh.js').read_text(encoding='utf-8')
           refresh=(root/'course-rag-refresh.js').read_text(encoding='utf-8')
           for marker in ['zRGKSy_UhFc','Azure AI Search','Pinecone','Qdrant','Weaviate','Milvus','pgvector','text-embedding-3-small','text-embedding-3-large','bge-m3','multilingual-e5']:
               assert marker in refresh, marker

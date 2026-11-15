@@ -10,8 +10,15 @@ root.querySelectorAll("iframe[src*='youtube'],iframe[src*='youtu.be'],a[href*='y
  if(block&&root.contains(block))block.remove();
  else if(el.tagName==="A"||el.tagName==="IFRAME"||el.tagName==="BUTTON")el.remove();
 });
+// Film jest widoczny od razu, bez ukrytego przycisku i bez wymogu wcześniejszego kliknięcia.
 const watch=section.querySelector("#rag-watch"),player=section.querySelector("#rag-player");
-watch.addEventListener("click",()=>{if(!player.firstElementChild){const f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/zRGKSy_UhFc?rel=0";f.title="Wybrany film o RAG";f.loading="lazy";f.allowFullscreen=true;f.referrerPolicy="strict-origin-when-cross-origin";f.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";player.append(f)}player.hidden=!player.hidden;watch.textContent=player.hidden?"▶ Odtwórz wskazany film":"Ukryj film";if(player.hidden){player.replaceChildren()}});
+watch.remove();player.hidden=false;
+const frame=document.createElement("iframe");
+frame.src="https://www.youtube-nocookie.com/embed/zRGKSy_UhFc?rel=0";
+frame.title="RAG — wskazany film YouTube";frame.loading="lazy";
+frame.allowFullscreen=true;frame.referrerPolicy="strict-origin-when-cross-origin";
+frame.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+player.append(frame);
 const env=section.querySelector("#rag-env"),need=section.querySelector("#rag-need"),out=section.querySelector("#rag-recommendation");
 function choose(){let answer;if(env.value==="azure")answer="Punkt startowy: Azure AI Search + Azure OpenAI embeddings (lub kompatybilny model) + App Service/API. Sprawdź hybrydę, ACL i integrację z Blob.";else if(env.value==="postgres")answer="Punkt startowy: PostgreSQL + pgvector; przetestuj hybrid z pełnotekstowym wyszukiwaniem PostgreSQL i jakość filtrów.";else if(env.value==="own")answer="Porównaj Qdrant, Weaviate, Milvus i pgvector self-host. Wybór zależy od skali, filtrów, backupów i kompetencji operacyjnych.";else answer="Porównaj Pinecone, Qdrant Cloud, Weaviate Cloud i Zilliz Cloud na tej samej próbce pytań, uwzględniając region, koszt i filtry.";
 if(need.value==="hybrid")answer+=" Najpierw baseline BM25, potem vector + hybrid + reranking.";if(need.value==="private")answer+=" Zweryfikuj regiony, prywatne połączenia, retencję i wymagania self-host.";out.textContent=answer+" To propozycja do testu, nie automatyczna rekomendacja produkcyjna."}

@@ -8,7 +8,7 @@ const skip="script,style,code,pre,kbd,svg,a,button,textarea,input,select,abbr,.e
 const target=".sublesson-body p,.sublesson-body li,.sublesson-body figcaption,.path-description p,.path-description h3,.course-master-dive p";
 function mark(el){
  if(!el||!el.isConnected||el.closest(skip))return;
- const seen=new Set();let expanded=0;const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];
+ const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];
  while(walker.nextNode())nodes.push(walker.currentNode);
  for(const node of nodes){
   if(!node.parentElement||node.parentElement.closest(skip))continue;
@@ -20,10 +20,6 @@ function mark(el){
    frag.append(document.createTextNode(text.slice(pos,begin)));
    const abbr=document.createElement("abbr");abbr.className="course-term";abbr.tabIndex=0;abbr.textContent=match[2];
    abbr.title=data.en+": "+data.text;abbr.setAttribute("aria-label",match[2]+" — "+data.en+": "+data.text);frag.append(abbr);
-   const follows=text.slice(end).trimStart();
-   if(!seen.has(data.key)&&expanded<3&&!follows.startsWith("(")){
-     const extra=document.createElement("span");extra.className="course-inline-definition";extra.textContent=" ("+data.en+": "+data.text+")";frag.append(extra);seen.add(data.key);expanded++;
-   }
    pos=end;used=true;
   }
   if(used){frag.append(document.createTextNode(text.slice(pos)));node.replaceWith(frag);}

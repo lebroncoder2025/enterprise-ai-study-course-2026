@@ -15,10 +15,13 @@ const vocabByModule={
 };
 const fallback=[["cel biznesowy","business objective"],["przetwarzanie danych","data processing"],["testowanie","testing"],["ewaluacja","evaluation"]];
 let translations=0,tables=0;
+const vocabShown=new Set();
 for(const node of roots){
  const body=node.querySelector(".sublesson-body");if(!body)continue;
  const parent=node.closest(".course-module"),type=parent?.id||"";
  const words=vocabByModule[type]||fallback;
+ if(!vocabShown.has(type)){
+ vocabShown.add(type);
  const vocab=document.createElement("aside");vocab.className="english-vocab";
  vocab.innerHTML="<h3>Mini-słownik PL → EN · praktyczne słownictwo techniczne</h3>";
  const dl=document.createElement("dl");
@@ -26,15 +29,14 @@ for(const node of roots){
  vocab.appendChild(dl);
  const intro=body.querySelector("blockquote,.lead");
  if(intro)intro.insertAdjacentElement("afterend",vocab);else body.prepend(vocab);translations++;
+ }
  for(const table of [...body.querySelectorAll("table")]){
   if(table.closest(".learning-table-scroll"))continue;
   const frame=document.createElement("div");frame.className="learning-table-scroll";frame.tabIndex=0;frame.setAttribute("role","region");
   const title=table.querySelector("th")?.textContent?.trim()||"Tabela danych";
   frame.setAttribute("aria-label","Tabela: "+title+". Na wąskim ekranie przewiń poziomo.");
   table.parentNode.insertBefore(frame,table);frame.appendChild(table);
-  const desc=document.createElement("p");desc.className="learning-table-caption";
-  desc.textContent="Tabela z widoczną siatką. Na telefonie przewiń w bok, aby zobaczyć wszystkie kolumny.";
-  frame.after(desc);tables++;
+  tables++;
  }
 }
 const first=document.querySelector("#lesson-30-ai-genai .learning-table-scroll table");

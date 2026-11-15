@@ -36,7 +36,9 @@ jobs:
           import re
           root=Path('.')
           html=(root/'index.html').read_text(encoding='utf-8')
-          assert 'course-guided.js' in html and 'course-guided.css' in html
+          assert 'course-guided.js?' not in html and 'course-guided.css' in html
+          assert 'course-explanations.js?' not in html
+          assert 'const vocabShown=new Set()' in (root/'course-core.js').read_text(encoding='utf-8')
           assert 'course-media.js' in html and 'course-rag-lab.js' in html
           assert 'course-interactive.css' in html
           assert 'course-infrastructure.js' in html and 'course-infrastructure.css' in html
